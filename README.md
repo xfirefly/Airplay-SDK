@@ -12,3 +12,12 @@
 -	对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感,  iOS 和Android延时120ms左右, 电脑投屏 150ms左右
 -	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
 
+### 支持最多四分屏显示功能, 它的优势在于，可以同时展示4份方案内容在大屏幕上。多台电脑或手机，可以同时将屏幕投屏至电视 
+![Alt text](image/four.png?raw=true "Title")
+
+### 蓝莓投屏对竖屏显示做了深度优化, 支持Airplay / Miracast / 蓝莓投屏手机端 竖屏显示, 延时低, 不损失原始画质
+![Alt text](image/v.png?raw=true "Title")
+
+### 支持设置密码, 分辨率等
+![Alt text](image/main.png?raw=true "Title")
+![Alt text](image/setup.png?raw=true "Title")
