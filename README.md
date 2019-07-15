@@ -39,3 +39,12 @@
 #### 支持设置密码, 分辨率等
 ![Alt text](image/main.png?raw=true "Title")
 ![Alt text](image/setup.png?raw=true "Title")
+
+
+## 其他问题
+App安装到有些平台, 可能出现镜像卡顿延时， 是因为各芯片公司的codec实现差异， 目前这个app主要在Rockchip / 高通手机 平台调试 
+在 Rockchip 3288 上面是很流畅的， 可以点击链接看看效果，
+
+[两分屏](https://v.youku.com/v_show/id_XNDI3MjkxMDMwOA==.html?spm=a2h3j.8428770.3416059.1)
+
+[安卓投屏](https://v.youku.com/v_show/id_XNDI3MjkxMjE5Mg==.html?spm=a2h3j.8428770.3416059.1)
