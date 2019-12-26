@@ -1,4 +1,4 @@
-[Gitee]( https://gitee.com/dsfsdf33/Airplay-SDK )
+[从Gitee下载]( https://gitee.com/dsfsdf33/Airplay-SDK )
 # 蓝莓投屏
 下载app即可体验
 
