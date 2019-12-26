@@ -1,6 +1,6 @@
-# 蓝莓投屏SDK
-提供投屏SDK, 快速实现Windows/iOS/Android/MacOS 投屏到大屏幕, 适合家用/教育/会议/广告 等行业
-
+[Gitee]( https://gitee.com/dsfsdf33/Airplay-SDK )
+# 蓝莓投屏
+下载app即可体验
 
 -	支持Airplay/ Miracast /DLNA 和自有编码协议.
 - 支持多个iOS/Mac 设备同时镜像连接显示(最多同时4个)
