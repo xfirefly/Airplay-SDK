@@ -15,23 +15,22 @@
 ## SDK / 协议源码
 
 - 提供Airplay协议SDK, 亦可出售协议源码
-- 可定制软硬件投屏产品
 
 ## 联系
 
-- 微信/电话: 17722630259
+- 微信: maxfirefly
 
 
 
 ## 功能图片展示
 
-#### 支持最多四分屏显示功能, 它的优势在于，可以同时展示4份方案内容在大屏幕上。多台电脑或手机，可以同时将屏幕投屏至电视 
+- 支持最多四分屏显示功能, 它的优势在于，可以同时展示4份方案内容在大屏幕上。多台电脑或手机，可以同时将屏幕投屏至电视 
 ![Alt text](image/four.png?raw=true "Title")
 
-#### 蓝莓投屏对竖屏显示做了深度优化, 支持Airplay / Miracast / 蓝莓投屏手机端 竖屏显示, 延时低, 不损失原始画质
+- 蓝莓投屏对竖屏显示做了深度优化, 支持Airplay / Miracast / 蓝莓投屏手机端 竖屏显示, 延时低, 不损失原始画质
 ![Alt text](image/v.png?raw=true "Title")
 
-#### 支持设置密码, 分辨率等
+- 支持设置密码, 分辨率等
 ![Alt text](image/main.png?raw=true "Title")
 ![Alt text](image/setup.png?raw=true "Title")
 
