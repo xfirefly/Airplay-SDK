@@ -1,5 +1,3 @@
-[中文](README_CN.md)
-
 # SDK / SOURCE CODE
 AirPlay Mirroring is the process of displaying screen and audio of AirPlay device to a receiver device. 
 AirPlay Casting is process of streaming an audio/video stream from AirPlay device to a receiver device. 
