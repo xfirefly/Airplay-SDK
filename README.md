@@ -1,28 +1,44 @@
-[中文](README_CN.md)
+[从Gitee下载]( https://gitee.com/dsfsdf33/Airplay-SDK )
+# 蓝莓投屏
+下载仓库里的app即可体验
 
-# SDK / SOURCE CODE
-AirPlay Mirroring is the process of displaying screen and audio of AirPlay device to a receiver device. 
-AirPlay Casting is process of streaming an audio/video stream from AirPlay device to a receiver device. 
-This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receiver device. 
+-	支持Airplay/DLNA 和自有编码协议.
+-	iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
+-	Android系统, 使用 Miracast协议, 无需安装软件, 直接镜像投屏,可以投系统声音  (Miracast 依赖于不同芯片平台实现, 集成至蓝莓投屏) .
+-	Windows系统安装蓝莓研发的投屏客户端, 可以用投屏码 一键投屏到对应接收端. 支持同时镜像电脑屏幕到多个接收端,  接收端也可以同时显示多路屏幕, 即支持一投多和多投一, 适合会议办公, PPT演示
+-	Android系统也可以安装蓝莓研发的投屏客户端App, 实现分屏显示(Android限制, 不能录制系统声音, 所以声音还是从手机输出)
+-	接收端支持1080p四路分屏显示
+-	支持4K视频播放 , 可以推送爱奇异/腾讯视频/优酷 等App 的4K内容播放 (依赖于接收端硬件规格)
+-	对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感,  iOS 和Android延时120ms左右, 电脑投屏 150ms左右
+-	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
 
-## Specifications
-- Screen Mirroring from iOS and Mac OSX devices.
-- Supports use of hardware H.264 decoder available on the receiver device for low CPU usage and better performance.
-- Has simple and easy to integrate API which is uniform across multiple supported platforms.
-- Supports playback of YouTube free content to the Airplay Receiver device.
-- The source code is available on several different platforms, and can be easily ported to new platforms.
+## SDK / 协议源码
 
-## DEMO APP
-- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase app in reposiory.
+- 提供Airplay协议SDK, 亦可出售协议源码
 
-## CONTACT US
-- Telegram: https://t.me/maxguguji
+## 联系
 
-## Use Cases
-- Meeting room Collaboration: The SDK allows the presenter to slide the presentation while walking around and being more interactive with the audience, instead of being near to the laptop connected to the big screen to slide through. The mobile display can also be broadcasted on video conference call or webinar through this technology.
+- 微信: maxfirefly
 
-- Education: The SDK can be used to share the content from Apple devices to the classroom. Thus, the instructor can walk around the room during demonstration. Also, the students can show their work to the whole classroom using this technology. The provision of password protection feature restricts unauthorized access.
 
-- Home Entertainment: The SDK allows users to watch stored videos/songs and YouTube free content directly to the receiver device over WiFi. It also facilitates easy viewing of photos and videos on a large screen at family and friends gatherings.
 
-- Car Infotainment: The SDK allows sharing of screen, playback of audio/video/movies, slideshow of the photos stored on iOS/Mac devices to Android/Embedded Linux based Car Infotainment unit wirelessly for viewing by all occupants in the car. This enables a car to act as a small presentation room, where the iOS user can take the users through presentation on Car Infotainment controlling the slides from the iOS device.
+## 功能图片展示
+
+- 支持最多四分屏显示功能, 它的优势在于，可以同时展示4份方案内容在大屏幕上。多台电脑或手机，可以同时将屏幕投屏至电视 
+![Alt text](image/four.png?raw=true "Title")
+
+- 蓝莓投屏对竖屏显示做了深度优化, 支持Airplay / Miracast / 蓝莓投屏手机端 竖屏显示, 延时低, 不损失原始画质
+![Alt text](image/v.png?raw=true "Title")
+
+- 支持设置密码, 分辨率等
+![Alt text](image/main.png?raw=true "Title")
+![Alt text](image/setup.png?raw=true "Title")
+
+
+## 其他问题
+App安装到有些平台, 可能出现镜像卡顿延时， 是因为各芯片公司的codec实现差异， 目前这个app主要在Rockchip / 高通手机 平台调试 .
+在 Rockchip 3288 上面是很流畅的， 可以点击链接看看.  为取得最好效果, 需要针对芯片平台调试优化
+
+[两分屏](https://v.youku.com/v_show/id_XNDI3MjkxMDMwOA==.html?spm=a2h3j.8428770.3416059.1)
+
+[安卓投屏](https://v.youku.com/v_show/id_XNDI3MjkxMjE5Mg==.html?spm=a2h3j.8428770.3416059.1)
