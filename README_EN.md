@@ -1,4 +1,4 @@
-# SDK / SOURCE CODE
+# Sdk / Source code
 AirPlay Mirroring is the process of displaying screen and audio of AirPlay device to a receiver device. 
 AirPlay Casting is process of streaming an audio/video stream from AirPlay device to a receiver device. 
 This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receiver device. 
@@ -10,10 +10,11 @@ This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receive
 - Supports playback of YouTube free content to the Airplay Receiver device.
 - The source code is available on several different platforms, and can be easily ported to new platforms.
 
-## DEMO APP
+## Demo app
 - If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase app in reposiory.
 
-## CONTACT US
+## Contact us
+- Contact us to buy or ask questions
 - Telegram: https://t.me/maxguguji
 
 ## Use Cases
