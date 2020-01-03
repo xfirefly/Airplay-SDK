@@ -25,3 +25,6 @@ This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receive
 - Home Entertainment: The SDK allows users to watch stored videos/songs and YouTube free content directly to the receiver device over WiFi. It also facilitates easy viewing of photos and videos on a large screen at family and friends gatherings.
 
 - Car Infotainment: The SDK allows sharing of screen, playback of audio/video/movies, slideshow of the photos stored on iOS/Mac devices to Android/Embedded Linux based Car Infotainment unit wirelessly for viewing by all occupants in the car. This enables a car to act as a small presentation room, where the iOS user can take the users through presentation on Car Infotainment controlling the slides from the iOS device.
+
+## Picture
+![Alt text](image/mac.jpg?raw=true "Title")
