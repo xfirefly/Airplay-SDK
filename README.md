@@ -1,6 +1,6 @@
 [English](README_EN.md)
 
-# 蓝莓投屏
+# Airplay Receiver SDK
 下载仓库里的app即可体验
 
 -   [Gitee镜像]( https://gitee.com/halo-x/Airplay-SDK )
