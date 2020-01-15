@@ -22,6 +22,8 @@
 
 - 微信: maxfirefly
 
+<img src="image/qrcode.png?raw=true" width="300" height="300">
+
 
 
 ## 功能图片展示
