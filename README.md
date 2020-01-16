@@ -1,4 +1,4 @@
-[English](README_EN.md)
+[English Readme](README_EN.md)
 
 # Airplay Receiver SDK
 下载仓库里的app即可体验
