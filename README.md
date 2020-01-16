@@ -4,7 +4,7 @@
 下载仓库里的app即可体验
 
 - [Gitee镜像]( https://gitee.com/halo-x/Airplay-SDK )
-- 出售Airplay协议源代码, 可运行在linux , windows, android 等平台
+- **出售Airplay协议源代码, 可运行在linux , windows, android 等平台**
 -	支持Airplay/DLNA 和自有编码协议.
 -	iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
 -	Android系统, 使用 Miracast协议, 无需安装软件, 直接镜像投屏,可以投系统声音  (Miracast 依赖于不同芯片平台实现, 集成至蓝莓投屏) .
