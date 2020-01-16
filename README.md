@@ -28,6 +28,8 @@
 
 
 ## 功能图片展示
+- MacOS 镜像
+![Alt text](image/mac.jpg?raw=true "Title")
 
 - 支持最多四分屏显示功能, 它的优势在于，可以同时展示4份方案内容在大屏幕上。多台电脑或手机，可以同时将屏幕投屏至电视 
 ![Alt text](image/four.png?raw=true "Title")
@@ -38,9 +40,6 @@
 - 支持设置密码, 分辨率等
 ![Alt text](image/main.png?raw=true "Title")
 ![Alt text](image/setup.png?raw=true "Title")
-
-- MacOS
-![Alt text](image/mac.jpg?raw=true "Title")
 
 ## 其他问题
 App安装到有些平台, 可能出现镜像卡顿延时， 是因为各芯片公司的codec实现差异， 目前这个app主要在Rockchip / 高通手机 平台调试 .
