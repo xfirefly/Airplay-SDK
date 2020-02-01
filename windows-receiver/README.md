@@ -16,7 +16,9 @@
 
 
 
-## 视频展示
-- iPad 镜像
-[](https://www.bilibili.com/video/av86015516/)
+## 功能视频展示
  
+[iPad 镜像](https://www.bilibili.com/video/av86015516/)
+
+## 功能图片展示
+![Alt text](screenshot.png?raw=true "Title") 
