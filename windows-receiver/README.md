@@ -24,3 +24,5 @@
 
 ## 图片展示
 ![Alt text](../image/win.png?raw=true "Title") 
+
+![Alt text](../image/win2.png?raw=true "Title") 
