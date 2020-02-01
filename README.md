@@ -1,9 +1,8 @@
-[English Readme](README_EN.md)
+[[English Readme]](README_EN.md)
 
 # Airplay Receiver SDK
-下载仓库里的app即可体验
+[扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验
 
-- [直接下载app](https://fir.im/nlpv)
 - [Gitee镜像]( https://gitee.com/halo-x/Airplay-SDK )
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 -	支持Airplay/DLNA 和自有编码协议.
@@ -27,7 +26,7 @@
 
 - 微信: maxfirefly
 
-<img src="image/qrcode.png?raw=true" width="300" height="300">
+<img src="image/qrcode.png?raw=true" width="200" height="200">
 
 
 
