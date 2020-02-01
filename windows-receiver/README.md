@@ -2,7 +2,6 @@
 下载zip解压即可体验, iPad/iPhone/Mac 使用airplay 镜像到windows, 可以把pc 作为苹果设备的扩展显示器
 
 - [直接下载](http://api.blueberry-tek.com/download/wincast/win-airplay.zip)
-- [Github下载](https://github.com/xfirefly/Airplay-SDK/tree/master/windows-receiver) 
 - [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver) 
 
 ## 运行依赖

@@ -15,8 +15,9 @@
 -	支持4K视频播放 , 可以推送爱奇异/腾讯视频/优酷 等App 的4K内容播放 (依赖于接收端硬件规格)
 -	对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感,  iOS 和Android延时120ms左右, 电脑投屏 150ms左右
 -	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
-- [Windows发送端](http://fenti.me/yi)
-- [Android发送端](https://fir.im/pfad)
+- [Windows 镜像发送端](http://fenti.me/yi)
+- [Android 镜像发送端](https://fir.im/pfad)
+- [Windows Airplay 接收端](windows-receiver)
 
 ## SDK / 协议源码
 
