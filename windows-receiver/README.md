@@ -6,12 +6,14 @@
 
 ## 运行依赖
 
-- 苹果公司Bonjour服务, 安装zip包内的 Bonjour64.msi 或 Bonjour.msi
-- 如安装后运行提示找不到 dll, 安装下面的VC运行时库解决: https://aka.ms/vs/16/release/vc_redist.x86.exe
+- Airplay 需要调用Apple Bonjour 广播服务, 安装zip包内的 Bonjour64.msi 或 Bonjour.msi
+- 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
+
+## 已知问题
+- 按 f 全屏后如果图像显示不全, 修改 win10/设置/显示/缩放与布局 为 100%
 
 
 ## 联系
-
 - 微信: maxfirefly
 
 <img src="../image/qrcode.png?raw=true" width="200" height="200">
