@@ -11,6 +11,7 @@
 
 ## 已知问题
 - 按 f 全屏后如果图像显示不全, 修改 win10/设置/显示/缩放与布局 为 100%
+- 可能不支持某些型号的iOS设备
 
 
 ## 联系
@@ -25,6 +26,11 @@
 [iPad 镜像](https://www.bilibili.com/video/av86015516/)
 
 ## 图片展示
+- iPhone
+![Alt text](../image/win3.jpg?raw=true "Title") 
+
+- iPad
 ![Alt text](../image/win.png?raw=true "Title") 
 
+- Mac
 ![Alt text](../image/win2.jpg?raw=true "Title") 
