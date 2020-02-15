@@ -5,17 +5,23 @@
 - [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver) 
 
 ## 运行依赖
-
 - Airplay 需要调用Apple Bonjour 广播服务, 安装zip包内的 Bonjour64.msi 或 Bonjour.msi
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
 
-## 已知问题
-- 按 f 全屏后如果图像显示不全, 修改 win10/设置/显示/缩放与布局 为 100%
-- 如连接黑屏, 确认是不是防火墙禁止了exe联网
+## Q & A
+0. 视频投屏怎么用?
+- 需要安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C盘即可, 程序会调用其播放视频
+1. 按 f 全屏后图像显示不全 ?   
+-  修改 win10/设置/显示/缩放与布局 为 100%,  因请求iOS/Mac端编码1080p视频, 所以显示器最低要求为1920*1080
+2. 连接黑屏 ?  
+- 确认是不是防火墙禁止了exe联网
+3. 杀毒软件报毒 ?
 - 因程序加壳, 360或者Win杀毒会误报, 担心的话请禁止程序连互联网
-- 因请求iOS/Mac端编码1080p视频, 所以显示器最低要求为1920*1080
+4. iPhone找不到设备 win-airplay ?
+- 确实安装了Apple Bonjour 服务
 
 ## 更新历史
+- v4 增加视频投屏功能, 手机可通过Airplay投屏播放视频到电脑
 - v3 大幅降低镜像延迟
 - v2 增加按 f 切换全屏/窗口显示
 
