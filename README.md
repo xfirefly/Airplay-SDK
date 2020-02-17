@@ -1,6 +1,6 @@
 [[English Readme]](README_EN.md)
 
-## Airplay Receiver SDK
+## Airplay Receiver SDK [官网](http://deeprd.com/) 
 [扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验
 
 - [Gitee镜像]( https://gitee.com/halo-x/Airplay-SDK )
