@@ -1,9 +1,9 @@
 [[English Readme]](README_EN.md)
 
-## Airplay Receiver SDK [官网](http://deeprd.com/) 
-[扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验
+## Airplay Receiver SDK  
+[扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验.  
 
-- [Gitee镜像]( https://gitee.com/halo-x/Airplay-SDK )
+- [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) / [Github]( https://github.com/xfirefly/Airplay-SDK )  
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 -	支持Airplay/DLNA 和自有编码协议.
 -	iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
@@ -19,7 +19,6 @@
 - [Windows Airplay 接收端](windows-receiver)
 
 ## SDK / 协议源码
-
 - 提供Airplay协议SDK, 亦可出售协议源码
 
 ## 联系
