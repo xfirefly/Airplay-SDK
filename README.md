@@ -1,8 +1,9 @@
 [[ENGLISH README]](README_EN.md)
 
-## Airplay Receiver For Android
+## Airplay Receiver For Android & Windows
 [扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验
 
+- [Windows Airplay 接收端](windows-receiver)
 - [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) / [Github]( https://github.com/xfirefly/Airplay-SDK ) / [官网](http://deeprd.com/) 
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 -	支持Airplay/DLNA 和自有编码协议.
@@ -16,7 +17,7 @@
 -	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
 - [Windows 镜像发送端](http://fenti.me/yi)
 - [Android 镜像发送端](https://fir.im/pfad)
-- [Windows Airplay 接收端](windows-receiver)
+
 
 ## SDK / 协议源码
 - 提供Airplay协议SDK, 亦可出售协议源码
