@@ -1,6 +1,6 @@
-[[English Readme]](README_EN.md)
+[[ENGLISH README]](README_EN.md)
 
-## Airplay Receiver SDK  
+## Airplay Receiver For Android
 [扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验.  
 
 - [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) / [Github]( https://github.com/xfirefly/Airplay-SDK )  
