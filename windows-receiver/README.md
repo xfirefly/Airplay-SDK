@@ -11,7 +11,7 @@
 
 ## Q & A
 0. 视频投屏怎么用?
-- 播放视频不要用镜像模式, 请用Airplay视频推送, 需要安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C盘即可, 程序会调用其播放视频
+- 播放视频不要用镜像模式, 请用Airplay视频推送, 需要安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C盘即可, 程序会调用其播放视频.  优先用: C:\Program Files\DAUM\PotPlayer\PotPlayerMini64.exe  第二: C:\Program Files\VideoLAN\VLC\vlc.exe
 1. 按 f 全屏后图像显示不全 ?   
 -  修改 win10/设置/显示/缩放与布局 为 100%,  因请求iOS/Mac端编码1080p视频, 所以显示器最低要求为1920*1080
 2. 连接黑屏 ?  
