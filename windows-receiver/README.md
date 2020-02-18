@@ -3,6 +3,7 @@
 
 - [直接下载](http://api.blueberry-tek.com/download/wincast/win-airplay.zip)
 - [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver) 
+- [官网下载](http://deeprd.com/) 
 
 ## 运行依赖
 - Airplay 需要调用Apple Bonjour 广播服务, 安装zip包内的 Bonjour64.msi 或 Bonjour.msi
