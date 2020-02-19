@@ -20,6 +20,8 @@
 - 因程序加壳, 360或者Win杀毒会误报, 担心的话请禁止程序连互联网
 4. iPhone找不到设备 win-airplay ?
 - 确认安装了Apple Bonjour 服务
+5. 支持安卓镜像到windows吗?
+- 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 安卓建议使用 [scrcpy](https://github.com/Genymobile/scrcpy)
 
 ## 更新历史
 - v4 增加视频投屏功能, 手机可通过Airplay投屏播放视频到电脑
