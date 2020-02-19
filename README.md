@@ -19,18 +19,15 @@
 - [Android 镜像发送端](https://fir.im/pfad)
 
 
-## SDK / 协议源码
-- 提供Airplay协议SDK, 亦可出售协议源码
-
 ## 联系
-
 - 微信: maxfirefly
 
 <img src="image/qrcode.png?raw=true" width="200" height="200">
 
+## 投屏教程
+![Alt text](image/cast.jpg?raw=true "Title")
 
-
-## 功能图片展示
+## 功能展示
 - MacOS 镜像
 ![Alt text](image/mac.jpg?raw=true "Title")
 
@@ -40,9 +37,7 @@
 - 蓝莓投屏对竖屏显示做了深度优化, 支持Airplay / Miracast / 蓝莓投屏手机端 竖屏显示, 延时低, 不损失原始画质
 ![Alt text](image/v.png?raw=true "Title")
 
-- 支持设置密码, 分辨率等
-![Alt text](image/main.png?raw=true "Title")
-![Alt text](image/setup.png?raw=true "Title")
+ 
 
 ## 其他问题
 App安装到有些平台, 可能出现镜像卡顿延时， 是因为各芯片公司的codec实现差异， 目前这个app主要在Rockchip / 高通手机 平台调试 .

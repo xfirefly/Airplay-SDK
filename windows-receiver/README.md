@@ -31,7 +31,8 @@
 
 <img src="../image/qrcode.png?raw=true" width="200" height="200">
 
-
+## 投屏教程
+![Alt text](../image/cast.jpg?raw=true "Title")
 
 ## 视频展示
  
