@@ -26,12 +26,12 @@
 - III 大幅降低镜像延迟
 - II 增加按 f 切换全屏/窗口显示
 
-## 联系
-- 微信: maxfirefly
-<img src="../image/qrcode.png?raw=true" width="100" height="100">
-
 ## 视频展示
 - [iPad/iPhone/Mac 使用airplay 镜像到windows电脑](https://www.bilibili.com/video/av90577703)
+
+## 问题反馈
+- 微信: maxfirefly
+<img src="../image/qrcode.png?raw=true" width="100" height="100">
 
 ## 投屏教程
 ![ ](../image/cast.jpg?raw=true "Title")
