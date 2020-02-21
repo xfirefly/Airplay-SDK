@@ -10,7 +10,7 @@
 
 ## Q & A
 1. 视频推送投屏怎么用?
-- 播放视频不要用镜像模式, 请用Airplay视频推送, 需要安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C/D/E盘都行, 程序会调用其播放视频.   
+- 播放视频不要用镜像, 请用Airplay视频推送, 安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C/D/E盘都行, 程序会调用其播放视频.   
 2. 连接黑屏 ?  
 - 确认是不是防火墙禁止了exe联网
 3. 杀毒软件报毒 ?
