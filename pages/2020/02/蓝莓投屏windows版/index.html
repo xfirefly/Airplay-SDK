@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.65.2 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="蓝莓投屏">
+<meta name="keywords" content="tech">
+<meta name="description" content="">
+
+
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="蓝莓投屏Windows版">
+<meta name="twitter:title" content="蓝莓投屏Windows版">
+<meta property="og:url" content="https://halo-x.gitee.io/airplay-sdk/2020/02/%E8%93%9D%E8%8E%93%E6%8A%95%E5%B1%8Fwindows%E7%89%88/">
+<meta property="twitter:url" content="https://halo-x.gitee.io/airplay-sdk/2020/02/%E8%93%9D%E8%8E%93%E6%8A%95%E5%B1%8Fwindows%E7%89%88/">
+<meta property="og:site_name" content="蓝莓投屏 使用教程">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2020-02-21T22:50:04">
+  
+  
+    <meta property="article:modified_time" content="2020-02-21T22:50:04">
+  
+  
+  
+    
+      <meta property="article:section" content="readme">
+    
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg">
+  <meta property="twitter:image" content="//d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg">
+
+
+
+
+
+  <meta property="og:image" content="https://avatars3.githubusercontent.com/u/475290?s=460&v=4">
+  <meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/475290?s=460&v=4">
+
+
+    <title>蓝莓投屏Windows版</title>
+
+    <link rel="icon" href="https://halo-x.gitee.io/airplay-sdk/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://halo-x.gitee.io/airplay-sdk/2020/02/%E8%93%9D%E8%8E%93%E6%8A%95%E5%B1%8Fwindows%E7%89%88/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://halo-x.gitee.io/airplay-sdk/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://halo-x.gitee.io/airplay-sdk/">蓝莓投屏 使用教程</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://halo-x.gitee.io/airplay-sdk/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://avatars3.githubusercontent.com/u/475290?s=460&amp;v=4" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://halo-x.gitee.io/airplay-sdk/#about">
+          <img class="sidebar-profile-picture" src="https://avatars3.githubusercontent.com/u/475290?s=460&amp;v=4" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">蓝莓投屏</h4>
+        
+          <h5 class="sidebar-profile-bio">免费无广告,大家都说好用</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://halo-x.gitee.io/airplay-sdk/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://halo-x.gitee.io/airplay-sdk/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://halo-x.gitee.io/airplay-sdk/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://halo-x.gitee.io/airplay-sdk/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://halo-x.gitee.io/airplay-sdk/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaOut
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      蓝莓投屏Windows版
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-02-21T22:50:04&#43;08:00">
+        
+  二月 21, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="https://halo-x.gitee.io/airplay-sdk/categories/readme">readme</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <h1 id="airplay-receiver-for-windows">Airplay Receiver for windows</h1>
+<p>下载zip解压即可体验, iPad/iPhone/Mac 使用airplay 镜像到windows, 可以把pc 作为苹果设备的扩展显示器</p>
+<p><a href="http://bluberry-10050152.file.myqcloud.com/win-airplay.zip">直接下载</a> | <a href="https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver">Gitee下载</a>  | <a href="http://deeprd.com/">官网下载</a></p>
+<h2 id="使用必读">使用必读</h2>
+<ul>
+<li>Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi</li>
+<li>如安装后运行提示找不到 dll, 安装VC运行库 : <a href="https://aka.ms/vs/16/release/vc_redist.x86.exe">https://aka.ms/vs/16/release/vc_redist.x86.exe</a></li>
+</ul>
+<h2 id="q--a">Q &amp; A</h2>
+<ol>
+<li>视频推送投屏怎么用?</li>
+</ol>
+<ul>
+<li>播放视频不要用镜像, 请用Airplay视频推送, 安装 <a href="https://daumpotplayer.com/download/">PotPlayer</a> 或者 <a href="https://www.videolan.org/vlc/">VLC</a> , 安装到C/D/E盘都行, 程序会调用其播放视频.</li>
+</ul>
+<ol start="2">
+<li>连接黑屏 ?</li>
+</ol>
+<ul>
+<li>确认是不是防火墙禁止了exe联网</li>
+</ul>
+<ol start="3">
+<li>杀毒软件报毒 ?</li>
+</ol>
+<ul>
+<li>因程序加壳, 360或者Win杀毒可能会误报, 担心的话请禁止程序访问互联网</li>
+</ul>
+<ol start="4">
+<li>iPhone找不到设备?</li>
+</ol>
+<ul>
+<li>确认安装了Apple Bonjour 服务</li>
+</ul>
+<ol start="5">
+<li>支持安卓镜像到windows吗?</li>
+</ol>
+<ul>
+<li>本程序只支持iPhone/iPad/Mac 镜像到windows系统, 安卓建议使用 <a href="https://github.com/Genymobile/scrcpy">scrcpy</a></li>
+</ul>
+<h2 id="更新历史">更新历史</h2>
+<ul>
+<li>V 重构, 支持4K屏, 增加全屏/窗口显示, 窗口大小自由调整等功能</li>
+<li>IV 增加视频投屏功能, 手机可通过Airplay投屏播放视频到电脑</li>
+<li>III 大幅降低镜像延迟</li>
+<li>II 增加按 f 切换全屏/窗口显示</li>
+</ul>
+<h2 id="视频展示">视频展示</h2>
+<ul>
+<li><a href="https://www.bilibili.com/video/av90577703">iPad/iPhone/Mac 使用airplay 镜像到windows电脑</a></li>
+</ul>
+<h2 id="问题反馈">问题反馈</h2>
+<ul>
+<li>微信: maxfirefly
+<!-- raw HTML omitted --></li>
+</ul>
+<h2 id="投屏教程">投屏教程</h2>
+<p><img src="https://halo-x.gitee.io/airplay-sdk/img/cast.jpg?raw=true" alt=" " title="Title"></p>
+<h2 id="图片展示">图片展示</h2>
+<ul>
+<li>
+<p>iPhone
+<img src="https://halo-x.gitee.io/airplay-sdk/img/win3.png?raw=true" alt="" title="Title">
+<img src="https://halo-x.gitee.io/airplay-sdk/img/win2.png?raw=true" alt="" title="Title"></p>
+</li>
+<li>
+<p>iPad
+<img src="https://halo-x.gitee.io/airplay-sdk/img/win1.png?raw=true" alt="" title="Title">
+<img src="https://halo-x.gitee.io/airplay-sdk/img/win5.png?raw=true" alt="" title="Title"></p>
+</li>
+<li>
+<p>Mac
+<img src="https://halo-x.gitee.io/airplay-sdk/img/win4.png?raw=true" alt="" title="Title">
+<img src="https://halo-x.gitee.io/airplay-sdk/img/win2.jpg?raw=true" alt="" title="Title"></p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 蓝莓投屏. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://avatars3.githubusercontent.com/u/475290?s=460&amp;v=4" alt="作者的图片" />
+    
+    <h4 id="about-card-name">蓝莓投屏</h4>
+    
+      <div id="about-card-bio">免费无广告,大家都说好用</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://halo-x.gitee.io/airplay-sdk/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://halo-x.gitee.io/airplay-sdk/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/halo-x.gitee.io\/airplay-sdk\/2020\/02\/%E8%93%9D%E8%8E%93%E6%8A%95%E5%B1%8Fwindows%E7%89%88\/';
+          
+            this.page.identifier = '\/2020\/02\/%E8%93%9D%E8%8E%93%E6%8A%95%E5%B1%8Fwindows%E7%89%88\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

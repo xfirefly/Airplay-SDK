@@ -1,7 +1,0 @@
-/// Mixin helper to add opacity rules
-/// @param {number} $opacity - Opacity CSS value
-@mixin opacity($opacity) {
-    opacity: $opacity;
-    $opacity-ie: $opacity * 100;
-    filter:  alpha(opacity=$opacity-ie); // IE8
-}
