@@ -1,0 +1,20 @@
+{{ $ancestors := first .level (split .category.path " ") }}
+{{ if eq ($ancestors | len) ((intersect $ancestors (split .parent " ")) | len) }}
+  <div id="posts-list-{{ .category.name | urlize }}" class="archive" data-category="{{ .category.name }}" data-parent-categories="{{ delimit $ancestors "," }}" style="display: block;">
+  <h4 class="archive-title text-xlarge">
+    <a class="link-unstyled" href="{{ .category.name | urlize }}">{{ .category.name }} ({{ .scratch.GetSortedMapValues (replace .category.path " " "/") | len }})</a>
+  </h4>
+  <ul class="archive-posts">
+    {{ range (.scratch.GetSortedMapValues (replace .category.path " " "/")) }}
+      <li class="archive-post" style="display: list-item;">
+        <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
+      </li>
+    {{ end }}
+  </ul>
+  {{ $index := (add .level 1) }}
+  {{ $path := (printf "%s" .category.path) }}
+  {{ range .scratch.GetSortedMapValues (printf "category-level-%d" $index) }}
+    {{ partial "internal/recursive-categories-full-2.html" (dict "scratch" $.scratch "category" . "level" $index "parent" $path) }}
+  {{ end }}
+  </div>
+{{ end }}

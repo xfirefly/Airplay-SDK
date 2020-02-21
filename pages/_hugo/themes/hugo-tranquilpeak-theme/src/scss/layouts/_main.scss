@@ -1,0 +1,132 @@
+#main {
+    display:            block;
+    min-height:         100%;
+    background:         map-get($main, 'background-color');
+    transition:         transform .25s ease-in-out;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+
+    min-width: $main-width;
+    @media only screen and (max-width: $main-width) {
+        min-width: 100%;
+    }
+
+    &.hasCover {
+        // Set `padding-top` to `50px` when there is a cover image on page and
+        // if there is a cover caption or
+        // if its meta information are out of cover image
+        &.hasCoverCaption,
+        &.hasCoverMetaOut {
+            padding-top: 50px !important;
+        }
+
+        // Set `padding-top` to 0 when there is a cover image on page and
+        // if its meta information are on image or
+        // if its meta information are out of cover image and
+        // if there is a cover caption
+        //
+        // The cover caption have a `margin-top` to `50px` to replace the padding
+        &.hasCoverMetaIn,
+        &.hasCoverMetaOut.hasCoverCaption {
+            padding-top: 0 !important;
+        }
+    }
+}
+
+@media #{$small-and-down} {
+    #main {
+        // Display `main` div in large size
+        @include main-lg;
+
+        // Push `main` div from the size of the large sidebar
+        &[data-behavior="1"],
+        &[data-behavior="2"],
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include main-pushed-lg;
+        }
+        // Push `main` div from the size of the medium sidebar
+        &[data-behavior="3"],
+        &[data-behavior="6"] {
+            @include main-pushed-md;
+        }
+    }
+}
+
+@media #{$medium-only} {
+    #main {
+        // Display `main` div in medium size
+        &[data-behavior="1"],
+        &[data-behavior="2"],
+        &[data-behavior="3"] {
+            @include main-md;
+        }
+        // Display `main` div in large size and push it from the size of the large sidebar
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include main-lg;
+            @include main-pushed-lg;
+        }
+        // Display `main` div in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include main-lg;
+            @include main-pushed-md;
+        }
+    }
+}
+
+@media #{$large-only} {
+    #main {
+        // Display `main` div in small size
+        &[data-behavior="1"],
+        &[data-behavior="2"] {
+            @include main-sm;
+        }
+        // Display `main` div in medium size
+        &[data-behavior="3"] {
+            @include main-md;
+        }
+        // Display `main` div in large size and push it from the size of the large sidebar
+        &[data-behavior="4"],
+        &[data-behavior="5"]{
+            @include main-lg;
+            @include main-pushed-lg;
+        }
+        // Display `main` div in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include main-lg;
+            @include main-pushed-md;
+        }
+    }
+}
+
+@media #{$xlarge-and-up} {
+    #main {
+        // Display `main` div in extra small size
+        &[data-behavior="1"] {
+            @include main-xs;
+        }
+        // Display `main` div in small size
+        &[data-behavior="2"] {
+            @include main-sm;
+        }
+        // Display `main` div in medium size
+        &[data-behavior="3"] {
+            @include main-md;
+        }
+        // Display `main` div in large size and push it from the size of the extra large sidebar
+        &[data-behavior="4"] {
+            @include main-lg;
+            @include main-pushed-xlg;
+        }
+        // Display `main` div in large size and push it from the size of the extra large sidebar
+        &[data-behavior="5"] {
+            @include main-lg;
+            @include main-pushed-lg;
+        }
+        // Display `main` div in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include main-lg;
+            @include main-pushed-md;
+        }
+    }
+}

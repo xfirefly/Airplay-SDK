@@ -1,0 +1,34 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "extends": "google",
+    "rules": {
+        "comma-dangle": [2,"never"],
+        "valid-jsdoc": [2, {
+            "requireReturnDescription": false,
+            "requireParamDescription": false
+        }],
+        "brace-style": [2, "stroustrup"],
+        "no-trailing-spaces": [2, {"skipBlankLines": true }],
+        "eqeqeq":[1],
+        "max-len": [1, 100, 4, {"ignoreUrls": true}],
+        "no-useless-escape":0,
+        "quote-props": [
+            2,
+            "as-needed"
+        ],
+        "no-var": "off",
+        "no-invalid-this": "off",
+        "indent": [
+            "error",
+            2,
+            {
+                "FunctionDeclaration": {
+                    "body": 1,
+                    "parameters": 2
+                }
+            }
+        ]
+    }
+}

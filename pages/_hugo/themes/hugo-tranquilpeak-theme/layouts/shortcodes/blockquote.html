@@ -1,0 +1,15 @@
+<blockquote>
+  <p>{{ .Inner }}</p>
+  <footer>
+    <strong>{{ .Get 0 }}</strong>
+    {{ if ge (len .Params) 3 }}
+      <cite><a href="{{ .Get 1 }}" target="_blank" rel="external">{{ .Get 2 }}</a></cite>
+    {{ else }}
+      {{ if (findRE "https?://" (.Get 1)) }}
+        <cite><a href="{{ .Get 1 }}" target="_blank" rel="external">{{ .Get 1 }}</a></cite>
+      {{ else }}
+        <cite>{{ .Get 1 }}</cite>
+      {{ end }}
+    {{ end }}
+  </footer>
+</blockquote>

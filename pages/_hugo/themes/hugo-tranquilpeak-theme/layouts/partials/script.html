@@ -1,0 +1,95 @@
+<!--EXTERNAL SCRIPTS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+{{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+{{ else if eq .Site.Params.syntaxHighlighter "prism.js" }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.3/prism.min.js" integrity="sha256-haEv2ilTk2sXcJaGbkTtErRCHy/qGt3g+bGbgPf5OTY=" crossorigin="anonymous"></script>
+{{ end }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+<!--EXTERNAL SCRIPTS END-->
+<!--SCRIPTS-->
+<script src="/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+<!--SCRIPTS END-->
+{{ range .Site.Params.customJS }}
+  {{ if isset . "src" }}
+    <script{{ range $key, $value := . }} {{ if eq $key "src" }}{{ (printf "%s=\"%s\"" $key ($value | absURL)) | safeHTMLAttr }}{{ else if and (in "async defer" $key) }}{{ if $value }}{{ (printf "%s" $key) | safeHTMLAttr }}{{ end }}{{ else }}{{ (printf "%s=\"%s\"" $key (string $value)) | safeHTMLAttr }}{{ end }}{{ end }}></script>
+  {{ else }}
+    <script src="{{ . | absURL }}"></script>
+  {{ end }}
+{{ end }}
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+{{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+{{ end }}
+{{ if .IsPage }}
+  {{ if not (eq .Params.comments false) }}
+    {{ if .Site.DisqusShortname }}
+      <script>
+        var disqus_config = function () {
+          this.page.url = '{{ .Permalink }}';
+          {{ if .Params.disqusIdentifier }}
+            this.page.identifier = '{{ .Params.disqusIdentifier }}';
+          {{ else }}
+            this.page.identifier = '{{ .RelPermalink }}'
+          {{ end }}
+        };
+        (function() {
+          // Don't ever inject Disqus on localhost--it creates unwanted
+          // discussions from 'localhost:1313' on your Disqus account...
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = '{{ .Site.DisqusShortname }}';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if or .Params.math .Site.Params.math }}
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: { linebreaks: { automatic: true } },
+      tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+      messageStyle: 'none'
+    });
+  </script>
+{{ end }}
+{{ with .Site.Params.algolia }}
+  {{ if (isset . "appId") | and (isset . "apiKey") | and (isset . "indexName") }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment-with-locales.min.js" integrity="sha256-TbOIe++NbC9P3KTtUMJ5wcROlBdnRqrPleLdpPg3xxE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.24.5/algoliasearch.min.js" integrity="sha256-vUvLcn3X0cXhote4PNwW6d+fzjJR0hoD+yGFeVaElew=" crossorigin="anonymous"></script>
+    <script>
+      var algoliaClient = algoliasearch('{{ .appId }}', '{{ .apiKey }}');
+      var algoliaIndex = algoliaClient.initIndex('{{ .indexName }}');
+    </script>
+  {{ end }}
+{{ end }}

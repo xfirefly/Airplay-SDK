@@ -1,0 +1,166 @@
+## GLOBAL ##
+- id: "global.home"
+  translation: "Início"
+
+- id: "global.categories"
+  translation: "Categorias"
+
+- id: "global.category"
+  translation: "Categoria"
+
+- id: "global.tags"
+  translation: "Tags"
+
+- id: "global.tag"
+  translation: "Tag"
+
+- id: "global.archives"
+  translation: "Arquivo"
+
+- id: "global.search"
+  translation: "Pesquisar"
+
+- id: "global.about"
+  translation: "Sobre"
+
+- id: "global.author_picture"
+  translation: "Foto do autor"
+
+- id: "global.share_on"
+  translation: "Compartilhar no %s"
+
+- id: "global.mail"
+  translation: "Email"
+
+- id: "global.rss"
+  translation: "RSS"
+
+- id: "global.share_on_google_plus"
+  translation: "Compartilhar no Google+"
+
+- id: "global.share_on_facebook"
+  translation: "Compartilhar no Facebook"
+
+- id: "global.share_on_twitter"
+  translation: "Compartilhar no Twitter"
+
+- id: "global.search_category"
+  translation: "Pesquisar categoria"
+
+- id: "global.search_tag"
+  translation: "Pesquisar tag"
+
+- id: "global.search_date"
+  translation: "Pesquisar data (AAAA/MM/DD)"
+
+## GLOBAL.POST_FOUND ##
+- id: "global.post_found.zero"
+  translation: "não foram encontrados artigos"
+
+- id: "global.post_found.one"
+  translation: "1 artigo encontrado"
+
+- id: "global.post_found.other"
+  translation: "{n} artigos encontrados"
+
+## GLOBAL.CATEGORIES_FOUND ##
+- id: "global.categories_found.zero"
+  translation: "não foram encontradas categorias"
+
+- id: "global.categories_found.one"
+  translation: "1 categoria encontrada"
+
+- id: "global.categories_found.other"
+  translation: "{n} categorias encontradas"
+
+## GLOBAL.TAGS_FOUND ##
+- id: "global.tags_found.zero"
+  translation: "não foram encontradas tags"
+
+- id: "global.tags_found.one"
+  translation: "1 tag encontrada"
+
+- id: "global.tags_found.other"
+  translation: "{n} tags encontradas"
+
+## PAGINATION ##
+- id: "pagination.page"
+  translation: "página {{ .Paginator.PageNumber }}"
+
+- id: "pagination.of"
+  translation: "de {{ .Paginator.TotalPages }}"
+
+- id: "pagination.newer_posts"
+  translation: "POSTS MAIS NOVOS"
+
+- id: "pagination.older_posts"
+  translation: "POSTS MAIS ANTIGOS"
+
+- id: "pagination.previous"
+  translation: "ANTERIOR"
+
+- id: "pagination.next"
+  translation: "PRÓXIMO"
+
+## POST ##
+- id: "post.no_title"
+  translation: "sem título"
+
+- id: "post.categorized_in"
+  translation: "em"
+
+- id: "post.tagged_in"
+  translation: "ETIQUETADO em"
+
+- id: "post.toc"
+  translation: "Conteúdo"
+
+- id: "post.read_more"
+  translation: "Continuar leitura"
+
+- id: "post.go_to_website"
+  translation: "Ir para o site"
+
+- id: "post.comment_and_share"
+  translation: "Comentar e compartilhar"
+
+## FOOTER ##
+- id: "footer.all_rights_reserved"
+  translation: "All Rights Reserved"
+
+## DATE ##
+- id: "date.month.january"
+  translation: "Janeiro"
+
+- id: "date.month.february"
+  translation: "Fevereiro"
+
+- id: "date.month.march"
+  translation: "Março"
+
+- id: "date.month.april"
+  translation: "Abril"
+
+- id: "date.month.may"
+  translation: "Maio"
+
+- id: "date.month.june"
+  translation: "Junho"
+
+- id: "date.month.july"
+  translation: "Julho"
+
+- id: "date.month.august"
+  translation: "Agosto"
+
+- id: "date.month.september"
+  translation: "Setembro"
+
+- id: "date.month.october"
+  translation: "Outubro"
+
+- id: "date.month.november"
+  translation: "Novembro"
+
+- id: "date.month.december"
+  translation: "Dezembro"

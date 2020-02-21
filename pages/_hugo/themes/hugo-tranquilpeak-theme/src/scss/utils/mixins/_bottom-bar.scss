@@ -1,0 +1,52 @@
+/// Mixin helper to stylized bottom bar in small size
+/// minus width of sidebar on extra large screen and minus its padding
+@mixin bottom-bar-xs {
+    width: calc(100% - #{map-get($sidebar, xlg-screen-width)} - 15px * 2);
+    left:  map-get($sidebar, xlg-screen-width);
+}
+
+/// Mixin helper to stylized bottom bar in small size
+/// minus width of sidebar on large screen and minus its padding
+@mixin bottom-bar-sm {
+    width: calc(100% - #{map-get($sidebar, lg-screen-width)} - 15px * 2);
+    left:  map-get($sidebar, lg-screen-width);
+}
+
+/// Mixin helper to stylized bottom bar in medium size
+/// minus width of sidebar on medium screen and minus its padding
+@mixin bottom-bar-md {
+    width: calc(100% - #{map-get($sidebar, md-screen-width)} - 15px * 2);
+    left:  map-get($sidebar, md-screen-width);
+}
+
+/// Mixin helper to stylized bottom bar in large size minus its padding
+@mixin bottom-bar-lg {
+    width: calc(100% - 15px * 2);
+    left:  0;
+}
+
+/// Mixin helper to pushed bottom bar from medium sidebar size
+@mixin bottom-bar-pushed-md {
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
+    &.pushed {
+        margin-left: #{map-get($sidebar, md-screen-width)};
+        width: calc(100% - #{map-get($sidebar, md-screen-width)});
+    }
+}
+
+/// Mixin helper to pushed bottom bar from large sidebar size
+@mixin bottom-bar-pushed-lg {
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
+    &.pushed {
+        margin-left: #{map-get($sidebar, lg-screen-width)};
+        width: calc(100% - #{map-get($sidebar, lg-screen-width)});
+    }
+}
+/// Mixin helper to pushed bottom bar from extra large sidebar size
+@mixin bottom-bar-pushed-xlg {
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
+    &.pushed {
+        margin-left: #{map-get($sidebar, xlg-screen-width)};
+        width: calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    }
+}

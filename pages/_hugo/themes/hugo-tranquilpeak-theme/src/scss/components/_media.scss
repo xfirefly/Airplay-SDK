@@ -1,0 +1,23 @@
+.media {
+    &-body,
+    &-left {
+        display:        table-cell;
+        vertical-align: top;
+    }
+    &-left {
+        float:         left;
+        padding-right: 15px;
+    }
+    &-body {
+        width: 100%;
+    }
+    &-heading {
+        margin: 0 0 -5px;
+    }
+    &-meta {
+        color: map-get($colors, 'light');
+    }
+    &-content {
+        color: map-get($colors, 'base');
+    }
+}
