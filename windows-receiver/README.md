@@ -5,43 +5,44 @@
 - [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver) 
 - [官网下载](http://deeprd.com/) 
 
-## 运行依赖
-- Airplay 需要调用Apple Bonjour 广播服务, 安装zip包内的 Bonjour64.msi 或 Bonjour.msi
+## 使用必读
+- Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
+- [iPad 镜像](https://www.bilibili.com/video/av86015516/)
 
 ## Q & A
-0. 视频投屏怎么用?
-- 播放视频不要用镜像模式, 请用Airplay视频推送, 需要安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C盘即可, 程序会调用其播放视频.  优先用: C:\Program Files\DAUM\PotPlayer\PotPlayerMini64.exe  第二: C:\Program Files\VideoLAN\VLC\vlc.exe
-1. 按 f 全屏后图像显示不全 ?   
--  修改 win10/设置/显示/缩放与布局 为 100%,  因请求iOS/Mac端编码1080p视频, 所以显示器最低要求为1920*1080
+1. 视频推送投屏怎么用?
+- 播放视频不要用镜像模式, 请用Airplay视频推送, 需要安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C/D/E盘都行, 程序会调用其播放视频.   
 2. 连接黑屏 ?  
 - 确认是不是防火墙禁止了exe联网
 3. 杀毒软件报毒 ?
-- 因程序加壳, 360或者Win杀毒会误报, 担心的话请禁止程序连互联网
-4. iPhone找不到设备 win-airplay ?
+- 因程序加壳, 360或者Win杀毒可能会误报, 担心的话请禁止程序访问互联网
+4. iPhone找不到设备?
 - 确认安装了Apple Bonjour 服务
 
 ## 更新历史
-- v4 增加视频投屏功能, 手机可通过Airplay投屏播放视频到电脑
-- v3 大幅降低镜像延迟
-- v2 增加按 f 切换全屏/窗口显示
+- V 重构, 支持4K屏, 增加全屏/窗口显示, 窗口大小自由调整等功能
+- IV 增加视频投屏功能, 手机可通过Airplay投屏播放视频到电脑
+- III 大幅降低镜像延迟
+- II 增加按 f 切换全屏/窗口显示
 
 ## 联系
 - 微信: maxfirefly
+<img src="../image/qrcode.png?raw=true" width="100" height="100">
 
 ## 投屏教程
-![Alt text](../image/cast.jpg?raw=true "Title")
-
-## 视频展示
- 
-[iPad 镜像](https://www.bilibili.com/video/av86015516/)
+![ ](../image/cast.jpg?raw=true "Title")
 
 ## 图片展示
 - iPhone
-![Alt text](../image/win3.jpg?raw=true "Title") 
+![](../image/win3.png?raw=true "Title") 
+
+![](../image/win2.png?raw=true "Title") 
 
 - iPad
-![Alt text](../image/win.png?raw=true "Title") 
+![](../image/win1.png?raw=true "Title") 
+![](../image/win5.png?raw=true "Title") 
 
 - Mac
-![Alt text](../image/win2.jpg?raw=true "Title") 
+![](../image/win4.png?raw=true "Title") 
+![](../image/win2.jpg?raw=true "Title") 
