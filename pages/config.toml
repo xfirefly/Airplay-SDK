@@ -12,7 +12,7 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseURL = "http://halo-x.gitee.io/airplay-sdk/"
+baseURL = "https://halo-x.gitee.io/airplay-sdk/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "蓝莓投屏 使用教程"
