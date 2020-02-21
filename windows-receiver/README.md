@@ -1,14 +1,12 @@
 # Airplay Receiver for windows
 下载zip解压即可体验, iPad/iPhone/Mac 使用airplay 镜像到windows, 可以把pc 作为苹果设备的扩展显示器
 
-- [直接下载](http://api.blueberry-tek.com/download/wincast/win-airplay.zip)
-- [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver) 
-- [官网下载](http://deeprd.com/) 
+[直接下载](http://bluberry-10050152.file.myqcloud.com/win-airplay.zip) | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)  | [官网下载](http://deeprd.com/) 
 
 ## 使用必读
 - Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
-- [iPad 镜像](https://www.bilibili.com/video/av86015516/)
+
 
 ## Q & A
 1. 视频推送投屏怎么用?
@@ -32,13 +30,15 @@
 - 微信: maxfirefly
 <img src="../image/qrcode.png?raw=true" width="100" height="100">
 
+## 视频展示
+- [iPad 镜像](https://www.bilibili.com/video/av86015516/)
+
 ## 投屏教程
 ![ ](../image/cast.jpg?raw=true "Title")
 
 ## 图片展示
 - iPhone
 ![](../image/win3.png?raw=true "Title") 
-
 ![](../image/win2.png?raw=true "Title") 
 
 - iPad
