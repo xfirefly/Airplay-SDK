@@ -31,7 +31,7 @@
 <img src="../image/qrcode.png?raw=true" width="100" height="100">
 
 ## 视频展示
-- [iPad 镜像](https://www.bilibili.com/video/av86015516/)
+- [iPad/iPhone/Mac 使用airplay 镜像到windows电脑](https://www.bilibili.com/video/av90577703)
 
 ## 投屏教程
 ![ ](../image/cast.jpg?raw=true "Title")
