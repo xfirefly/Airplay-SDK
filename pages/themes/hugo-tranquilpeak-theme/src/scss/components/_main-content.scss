@@ -1,0 +1,7 @@
+.main-content-wrap {
+    display:       block;
+    max-width:     map-get($main-content, max-width);
+    margin:        0 auto;
+    padding-right: map-get($main-content, padding-right-left);
+    padding-left:  map-get($main-content, padding-right-left);
+}

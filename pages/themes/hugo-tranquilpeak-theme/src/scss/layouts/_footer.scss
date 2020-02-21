@@ -1,0 +1,8 @@
+#footer {
+    color:      map-get($colors, light);
+    font-size:  map-get($font-size, medium);
+    text-align: center;
+    margin-top: 70px;
+    height:     auto;
+    padding:    20px 20px;
+}

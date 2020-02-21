@@ -1,0 +1,166 @@
+## GLOBAL ##
+- id: "global.home"
+  translation: "ホーム"
+
+- id: "global.categories"
+  translation: "カテゴリー"
+
+- id: "global.category"
+  translation: "カテゴリー"
+
+- id: "global.tags"
+  translation: "タグ"
+
+- id: "global.tag"
+  translation: "タグ"
+
+- id: "global.archives"
+  translation: "アーカイブ"
+
+- id: "global.search"
+  translation: "検索"
+
+- id: "global.about"
+  translation: "プロフィール"
+
+- id: "global.author_picture"
+  translation: "プロフィール画像"
+
+- id: "global.share_on"
+  translation: "%sで共有"
+
+- id: "global.mail"
+  translation: "メール"
+
+- id: "global.rss"
+  translation: "RSS"
+
+- id: "global.search_category"
+  translation: "カテゴリー検索"
+
+- id: "global.search_tag"
+  translation: "タグ検索"
+
+- id: "global.search_date"
+  translation: "日付検索 (YYYY/MM/DD)"
+
+## GLOBAL.POST_FOUND ##
+- id: "global.post_found.zero"
+  translation: "見つかりませんでした。"
+
+- id: "global.post_found.one"
+  translation: "1件見つかりました。"
+
+- id: "global.post_found.other"
+  translation: "{n} 件見つかりました。"
+
+## GLOBAL.CATEGORIES_FOUND ##
+- id: "global.categories_found.zero"
+  translation: "見つかりませんでした。"
+
+- id: "global.categories_found.one"
+  translation: "1件のカテゴリーが見つかりました。"
+
+- id: "global.categories_found.other"
+  translation: "{n} 件のカテゴリーが見つかりました。"
+
+## GLOBAL.TAGS_FOUND ##
+- id: "globa.tags_found.zero"
+  translation: "見つかりませんでした。"
+
+- id: "globa.tags_found.one"
+  translation: "1件のタグが見つかりました。"
+
+- id: "globa.tags_found.other"
+  translation: "{n} 件のタグが見つかりました。"
+
+## PAGINATION ##
+- id: "pagination.page"
+  translation: "page {{ .Paginator.PageNumber }}"
+
+- id: "pagination.of"
+  translation: "of {{ .Paginator.TotalPages }}"
+
+- id: "pagination.newer_posts"
+  translation: "新しい投稿"
+
+- id: "pagination.older_posts"
+  translation: "古い投稿"
+
+- id: "pagination.previous"
+  translation: "前"
+
+- id: "pagination.next"
+  translation: "次"
+
+## POST ##
+- id: "post.no_title"
+  translation: "タイトルなし"
+
+- id: "post.categorized_in"
+  translation: "カテゴリー"
+
+- id: "post.tagged_in"
+  translation: "タグ"
+
+- id: "post.toc"
+  translation: "目次"
+
+- id: "post.read_more"
+  translation: "続きを読む"
+
+- id: "post.go_to_website"
+  translation: "ウェブサイトへ"
+
+- id: "post.comment_and_share"
+  translation: "コメント・共有"
+
+## FOOTER ##
+- id: "footer.all_rights_reserved"
+  translation: "All Rights Reserved"
+
+## DATE ##
+- id: "date.year.suffix"
+  translation: "年"
+
+- id: "date.month.suffix"
+  translation: "月"
+
+- id: "date.day.suffix"
+  translation: "日"
+
+- id: "date.month.january"
+  translation: "1"
+
+- id: "date.month.february"
+  translation: "2"
+
+- id: "date.month.march"
+  translation: "3"
+
+- id: "date.month.april"
+  translation: "4"
+
+- id: "date.month.may"
+  translation: "5"
+
+- id: "date.month.june"
+  translation: "6"
+
+- id: "date.month.july"
+  translation: "7"
+
+- id: "date.month.august"
+  translation: "8"
+
+- id: "date.month.september"
+  translation: "9"
+
+- id: "date.month.october"
+  translation: "10"
+
+- id: "date.month.november"
+  translation: "11"
+
+- id: "date.month.december"
+  translation: "12"

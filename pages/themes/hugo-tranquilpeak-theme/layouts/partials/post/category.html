@@ -1,0 +1,9 @@
+{{ with .Params.categories }}
+  {{ $categoriesLen := len . }}
+  {{ if gt $categoriesLen 0 }}
+    <span>{{ i18n "post.categorized_in" }}</span>
+    {{ range $k, $v := . }}
+      <a class="category-link" href="{{ . | printf "%s%s" "/categories/" | urlize | lower | relLangURL }}">{{ . }}</a>{{ if lt $k (sub $categoriesLen 1) }}, {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

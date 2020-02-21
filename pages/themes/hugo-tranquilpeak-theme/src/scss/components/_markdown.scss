@@ -1,0 +1,32 @@
+// Set markdown headings font size on large screen and up
+@media #{$large-and-up} {
+    .markdown {
+        @each $key, $value in $markdown-headings-font-size {
+            #{$key} {
+                font-size: $value;
+            }
+        }
+    }
+}
+
+// Reduce global font-size base and headings font size on small screen and down
+@media #{$small-and-down} {
+    .markdown {
+        @each $key, $value in $markdown-headings-font-size {
+            #{$key} {
+                font-size: $value - $markdown-headings-font-size-sm-screen-reduction-factor;
+            }
+        }
+    }
+}
+
+// Reduce global font-size base and headings font size on medium screen only
+@media #{$medium-only} {
+    .markdown {
+        @each $key, $value in $markdown-headings-font-size {
+            #{$key} {
+                font-size: $value - $markdown-headings-font-size-md-screen-reduction-factor;
+            }
+        }
+    }
+}
