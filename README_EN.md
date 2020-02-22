@@ -3,6 +3,8 @@ AirPlay Mirroring is the process of displaying screen and audio of AirPlay devic
 AirPlay Casting is process of streaming an audio/video stream from AirPlay device to a receiver device. 
 This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receiver device. 
 
+
+
 ## Specifications
 - Screen Mirroring from iOS and Mac OSX devices.
 - Supports use of hardware H.264 decoder available on the receiver device for low CPU usage and better performance.
@@ -10,8 +12,11 @@ This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receive
 - Supports playback of YouTube free content to the Airplay Receiver device.
 - The source code is available on several different platforms, and can be easily ported to new platforms.
 
-## Demo app
-- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase app in reposiory.
+## Android App
+- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase android app in reposiory.
+
+## Windows App
+- [Airplay Receiver For Windows](windows-receiver)
 
 ## Contact us
 - Contact us to buy or ask questions
