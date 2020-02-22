@@ -13,6 +13,7 @@
 # use grunt task `build` to synchronize assets
 
 baseURL = "https://halo-x.gitee.io/airplay-sdk/"
+#baseURL = "http://deeprd.com/doc/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "蓝莓投屏 使用教程"
@@ -33,8 +34,8 @@ canonifyurls = true
 [author]
   name = "蓝莓投屏"
   bio = "免费无广告,大家都说好用"
-  job = "Your job title"
-  location = "France"
+  job = "Developer"
+  location = "China"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   #gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
@@ -64,12 +65,12 @@ canonifyurls = true
   name = "Tags"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
   url = "/tags"
-[[menu.main]]
-  weight = 4
-  identifier = "archives"
-  name = "Archives"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
-  url = "/archives"
+# [[menu.main]]
+#   weight = 4
+#   identifier = "archives"
+#   name = "Archives"
+#   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+#   url = "/archives"
 [[menu.main]]
   weight = 5
   identifier = "about"
@@ -112,7 +113,7 @@ canonifyurls = true
   syntaxHighlighter = "highlight.js"
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
-  clearReading = true
+  clearReading = false
 
   # Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo".
   # If false it will flat categories.
