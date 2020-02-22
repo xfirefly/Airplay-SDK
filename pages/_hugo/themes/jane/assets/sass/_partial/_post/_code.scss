@@ -1,0 +1,63 @@
+// ==============================
+// Post code
+// ==============================
+
+// normal <code> style
+code {
+  padding: 3px 7px;
+  background: $code-background;
+  border-radius: 4px;
+  color: $code-color;
+}
+
+code, pre {
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+}
+
+
+// chroma code block style
+.highlight > .chroma {
+  margin: 1em 0;
+  overflow-x: auto;
+  position: relative;
+  border: 2px solid #dddddd;
+  line-height: 1.6;
+
+  code {
+    padding: 0;     /* remove normal code padding */
+    color: inherit;
+  }
+
+  pre {
+    margin: 0;      /* remove normal pre margin */
+  }
+
+  table {
+    position: relative;
+    padding: 0.8em 0;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 7px;
+      font-size: 0.8em;
+      font-weight: bold;
+      color: darken($gray, 10%);
+      // background: darken($code-background, 3%);
+      content: 'Code';
+    }
+  }
+
+  > table::after {
+    content: attr(data-lang);
+    text-transform: capitalize;
+  }
+
+  .lnt {
+    color: $gray;
+  }
+}
+
+@import '_chroma_highlight';

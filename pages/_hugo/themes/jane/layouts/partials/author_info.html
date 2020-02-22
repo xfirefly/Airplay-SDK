@@ -1,0 +1,24 @@
+{{- with $author := index (.context.Site.Data.authors | default dict) .author -}}
+  {{- $author_lang := index $author $.context.Site.Language.Lang | default $author -}}
+  {{- $author_name := $author_lang.name.display | default $author.name.display | default $.author -}}
+  {{- $author_desc := $author_lang.description | default $author.description -}}
+  {{- $author_image := $author_lang.image | default $author.image | default (dict "url" "image/blank-profile.png") -}}
+  {{- $author_url := $author_lang.url | default $author.url | default ((($.context.Site.GetPage "taxonomy" (printf "author/%s" $.author)) | default dict).Permalink) -}}
+<section class="author-info">
+  <div class="author-box">
+    <div class="author-image">
+      {{- with $author_url -}}<a href="{{ $author_url | relLangURL }}">{{- end -}}
+      <img src="{{ $author_image.url | relURL }}" alt="{{ $author_name }}" width="{{ $author_image.width | default 128 }}" height="{{ $author_image.height | default 128 }}"/>
+      {{- with $author_url -}}</a>{{- end -}}
+    </div>
+    <div class="author-content">
+    <p class="author-title">{{ i18n "author" }}</p>
+    <p class="author-name">{{ $author_name }}</p>
+    {{ with $author_desc -}}
+    <p class="author-desc">{{ . | markdownify }}</p>
+    {{- end }}
+    </div>
+    <div class="author-bottom"></div>
+  </div>
+</section>
+{{- end -}}

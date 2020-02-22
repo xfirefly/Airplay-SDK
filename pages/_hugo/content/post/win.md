@@ -6,6 +6,7 @@ thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jp
 metaAlignment: center
 coverMeta: out
 date: 2020-02-21T22:50:04+08:00
+weight: 1
 categories:
 - readme
 tags:

@@ -1,0 +1,32 @@
+{{ define "content" -}}
+<article class="post bg-white">
+  <!-- post-header -->
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ partial "post/i18nlist.html" . }}
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
+        {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+      </time>
+    </div>
+  </header>
+
+  <!-- TOC -->
+  {{ partial "post/toc.html" . }}
+
+  <!-- Content -->
+  <div class="post-content">
+      {{ .Content }}
+  </div>
+
+  <!-- Copyright -->
+  {{ partial "post/copyright.html" . }}
+
+  <!-- Reward -->
+  {{ partial "post/reward.html" . }}
+</article>
+
+<!-- Comments -->
+{{ partial "comments.html" . }}
+
+{{- end }}

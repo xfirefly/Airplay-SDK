@@ -1,0 +1,156 @@
+@mixin underline-from-center() {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 2px;
+    bottom: 0;
+    left: 51%;
+    right: 51%;
+    background: $theme-color;
+    transition-duration: 0.2s;
+    transition-property: right, left;
+    transition-timing-function: ease-out;
+  }
+
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    &:before {
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+@mixin mobile-menu-icon() {
+  @keyframes clickfirst {
+    0% {
+      transform: translateY(6px) rotate(0deg);
+      
+    }
+
+    100% {
+      transform: translateY(0) rotate(45deg);
+    }
+  }	
+
+  @keyframes clickmid {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes clicklast {
+    0% {
+      transform: translateY(-6px) rotate(0deg);
+    }
+
+    100% {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+  
+  @keyframes outfirst {
+    0% {
+      transform: translateY(0) rotate(-45deg);
+    }
+
+    100% {
+      transform: translateY(-6px) rotate(0deg);
+    }
+  }	
+
+  @keyframes outmid {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes outlast {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+
+    100% {
+      transform: translateY(6px) rotate(0deg);
+    }
+  }
+
+  span {
+    position: absolute;
+    /* fallback for browsers which still doesn't support for `calc()` */
+    left: 15px;
+    top: 25px;
+    left: calc((100% - 20px) / 2);
+    top: calc((100% - 1px) / 2);
+    width: 20px;
+    height: 1px;
+    background-color: $theme-color;
+  
+    &:nth-child(1) {
+      transform: translateY(6px) rotate(0deg);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(-6px) rotate(0deg);
+    }
+  }
+
+  &.icon-click {
+    span:nth-child(1) {
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: clickfirst;
+    }
+
+    span:nth-child(2) {
+      animation-duration: 0.2s;
+      animation-fill-mode: both;
+      animation-name: clickmid;
+    }
+
+    span:nth-child(3) {
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: clicklast;
+    }
+  }
+
+  &.icon-out {
+    span:nth-child(1) {
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: outfirst;
+    }
+
+    span:nth-child(2) {
+      animation-duration: 0.2s;
+      animation-fill-mode: both;
+      animation-name: outmid;
+    }
+
+    span:nth-child(3) {
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: outlast;
+    }
+  }
+}

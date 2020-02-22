@@ -1,0 +1,16 @@
+{{ define "content" }}
+<section id="posts" class="posts">
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}
+    {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ end }}
+  {{ $paginator := .Paginate $pages }}
+  {{ range $paginator.Pages }}
+    {{ .Render "summary" }}
+  {{ end }}
+</section>
+
+<!-- pagination -->
+{{ partial "pagination.html" . }}
+
+{{ end }}

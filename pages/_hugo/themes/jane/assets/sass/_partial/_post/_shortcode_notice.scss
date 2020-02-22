@@ -1,0 +1,55 @@
+// ==============================
+// Shortcode Notice
+// ==============================
+
+.shortcode-notice p {
+  padding: 0.6em 1em;
+  display: block;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666;
+}
+
+.shortcode-notice-title {
+  color: #fff;
+  padding-left: 1em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+// note color
+.shortcode-notice-title.note {
+  background-color: #6AB0DE;
+}
+
+.shortcode-notice.note p {
+  background: #E7F2FA;
+}
+
+// tip color
+.shortcode-notice-title.tip{
+  background-color: rgba(92, 184, 92, 0.8);
+}
+
+.shortcode-notice.tip p {
+  background: #E6F9E6;
+}
+
+// info color
+.shortcode-notice-title.info {
+  background-color: #F0B37E;
+}
+
+.shortcode-notice.info p {
+  background: #FFF2DB;
+}
+
+// warning color
+.shortcode-notice-title.warning {
+  background-color: rgba(217, 83, 79, 0.8);
+}
+
+.shortcode-notice.warning p {
+  background: #FAE2E2;
+}

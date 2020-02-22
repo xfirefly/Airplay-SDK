@@ -1,0 +1,23 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin min-screen($min-width: $global-body-width) {
+   @media screen and (min-width: $min-width) {
+     @content;
+   }
+}
+
+@mixin max-screen($max-width: $global-body-width) {
+   @media screen and (max-width: $max-width) {
+     @content;
+   }
+}

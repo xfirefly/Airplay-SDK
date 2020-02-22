@@ -1,0 +1,106 @@
+- id: archive
+  translation: Архив
+
+- id: tags
+  translation: Теги
+
+- id: tag
+  translation: "Тег: "
+
+- id: categories
+  translation: Категории
+
+- id: category
+  translation: "Категория: "
+
+# posts
+- id: prev
+  translation: Пред.
+
+- id: next
+  translation: След.
+
+- id: prev_post
+  translation: Пред.
+
+- id: next_post
+  translation: След.
+
+- id: toc
+  translation: Оглавление
+
+- id: readmore
+  translation: Читать дальше
+
+- id: reward
+  translation: Поддержка
+
+- id: rewardAlipay
+  translation: Alipay
+
+- id: rewardWechat
+  translation: Wechat
+
+- id: seeMarkDown
+  translation: Версия в Markdown »
+
+- id: loadDisqus
+  translation: Показать комментарии Disqus
+
+# posts.header
+- id: wordCount
+  translation: "{{.Count}} слов"
+
+- id: readingTime
+  translation: "{{.Count}} мин. чтения"
+
+# copyright
+- id: author
+  translation: Автор
+
+- id: lastMod
+  translation: LastMod
+
+- id: markdown
+  translation: Markdown
+
+- id: license
+  translation: Лицензия
+
+# counter
+- id: counter_archives
+  translation: "всего {{.Count}} записей"
+
+- id: counter_tagcloud
+  translation: "всего {{.Count}} тегов"
+
+- id: counter_categories
+  translation: "всего {{.Count}} категорий"
+
+# other
+- id: morePost
+  translation: "Больше записей >>>"
+
+- id: read_en
+  translation: Read in English
+
+- id: read_es
+  translation: Leer en español
+
+- id: read_zh-cn
+  translation: 中文阅读
+
+- id: read_zh-tw
+  translation: 中文閱讀
+
+- id: read_pt
+  translation: Leia em português
+
+- id: read_fr
+  translation: Lire en français
+
+- id: read_de
+  translation: Lese in Deutsch
+
+- id: language
+  translation: Язык

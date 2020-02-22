@@ -1,0 +1,108 @@
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
+{{ end }}
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+{{/* support older feature phones
+  see: https://stackoverflow.com/questions/1988499/meta-tags-for-mobile-should-they-be-used
+  */}}
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+{{/* fit for browsing on mobile devices and PC,
+  see : https://ziyuan.baidu.com/college/courseinfo?id=156
+*/}}
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+{{/* Add to homescreen for Chrome on Android */}}
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- author & description & keywords  -->
+{{- if or .Params.author .Site.Author.name -}}
+{{- $author_id := .Params.author | default .Site.Author.name -}}
+{{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+{{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+{{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+<meta name="author" content="{{ $author_name | safeHTML }}" />
+{{- end -}}
+
+{{- if .Description -}}
+  <meta name="description" content="{{ .Description | safeHTML }}" />
+{{ else if .IsPage }}
+  <meta name="description" content="{{ .Summary | plainify }}" />
+{{ else if .Site.Params.description }}
+  <meta name="description" content="{{ .Site.Params.description | safeHTML }}" />
+{{- end -}}
+
+{{- if .Keywords -}}
+  {{ $length := len .Keywords | add -1 -}}
+  <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}" />
+{{ else if .Site.Params.keywords }}
+  {{ $length := len .Site.Params.keywords | add -1 -}}
+  <meta name="keywords" content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}" />
+{{- end }}
+
+<!-- baidu & google verification  -->
+{{ with .Site.Params.baidu_verification }}<meta name="baidu-site-verification" content="{{.}}" />{{ end }}
+{{ with .Site.Params.google_verification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
+
+<!-- Site Generator -->
+<meta name="generator" content="Hugo {{ hugo.Version }}" />
+
+<!-- Permalink & RSSlink -->
+<link rel="canonical" href="{{ .Permalink }}" />
+{{ with .OutputFormats.Get "RSS" }}<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />{{ end }}
+
+{{ if .OutputFormats.Get "jsonfeed" }}
+<link
+  href="{{ with .OutputFormats.Get "jsonfeed" }}{{ .Permalink }}{{ end }}"
+  rel="alternate" type="application/json" title="{{ .Site.Title }}" />
+{{ end }}
+
+<!-- Custom Favicon -->
+{{ partial "custom_favicon.html" . }}
+
+<!-- debug -->
+{{- if .Site.Params.debug }}
+<script src="https://cdn.jsdelivr.net/npm/eruda@1.2.6/eruda.min.js" integrity="sha256-Jmz4bc3kp+rRrXX2tGadNBKFLwtzMapr8kHABxSAAP8=" crossorigin="anonymous"></script>
+<script>eruda.init();</script>
+{{- end }}
+
+<!-- Jane theme main style -->
+{{ $style := resources.Get "sass/jane.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen" crossorigin="anonymous">
+<!-- End -->
+
+<!-- custom css -->
+{{ range .Site.Params.customCSS }}
+<link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+{{ end }}
+
+{{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/google_news.html" . -}}
+{{- template "_internal/schema.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
+
+<!-- Polyfill for old browsers -->
+{{ `<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->` | safeHTML }}
+
+{{ `<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->` | safeHTML }}
+
+<!-- Analytics -->
+{{- if and (not .Site.IsServer) .Site.GoogleAnalytics -}}
+  {{ template "_internal/google_analytics_async.html" . }}
+{{- end -}}
+
+<!-- Custom head -->
+{{ partial "custom_head.html" . }}

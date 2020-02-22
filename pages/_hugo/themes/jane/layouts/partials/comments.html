@@ -1,0 +1,152 @@
+{{ if and .IsPage (ne .Params.comment false) }}
+
+  <!-- Commento -->
+  {{- if .Site.Params.commento.enable -}}
+    <div id="comments">
+      <div id="commento"></div>
+      <script src="{{ .Site.Params.commento.url }}/js/commento.js"></script>
+      <noscript>Please enable JavaScript to view the
+        <a href="https://commento.io/">comments powered by Commento.</a>
+      </noscript>
+    </div>
+  {{- end }}
+
+  <!-- utteranc -->
+  {{ if .Site.Params.utteranc.enable }}
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "{{ .Site.Params.utteranc.repo }}"
+            issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+            theme="{{ default "github-light" .Site.Params.utteranc.theme }}"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  {{ end }}
+
+  <!-- changyan -->
+  {{- if and .Site.Params.changyanAppid .Site.Params.changyanAppkey -}}
+    <div id="SOHUCS"></div>
+    <script type="text/javascript">
+    (function(){
+      if (window.location.hostname === 'localhost') return;
+
+      var appid = '{{ .Site.Params.changyanAppid }}';
+      var conf = '{{ .Site.Params.changyanAppkey }}';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
+    })();
+    </script>
+  {{- end }}
+
+  <!-- gitment -->
+  {{- if .Site.Params.gitment.owner -}}
+    <div class="post bg-white">
+      <div id="comments-gitment"></div>
+      {{ if .Site.Params.publicCDN.enable -}}
+        {{ .Site.Params.publicCDN.gitmentCSS | safeHTML }}
+        {{ .Site.Params.publicCDN.gitmentJS | safeHTML }}
+      {{- else -}}
+        <link rel="stylesheet" href="{{ "lib/gitment/gitment-0.0.3.min.css" | relURL }}">
+        <script src="{{ "lib/gitment/gitment-0.0.3.min.js" | relURL }}"></script>
+      {{- end }}
+      <script type="text/javascript">
+      const gitment = new Gitment({
+        id: '{{ .File.LogicalName }}',
+        title: '{{ .Title }}',
+        link: decodeURI(location.href),
+        desc: '{{ .Summary }}',
+        owner: '{{ .Site.Params.gitment.owner }}',
+        repo: '{{ .Site.Params.gitment.repo }}',
+        oauth: {
+          client_id: '{{ .Site.Params.gitment.clientId }}',
+          client_secret: '{{ .Site.Params.gitment.clientSecret }}'
+        }
+      })
+      gitment.render('comments-gitment')
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+    </div>
+  {{- end }}
+
+  <!-- Disqus -->
+  {{- if .Site.DisqusShortname -}}
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    {{ i18n "loadDisqus" }}
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = {{ .Permalink }};
+    };
+    function load_disqus() {
+      // Don't ever inject Disqus on localhost--it creates unwanted
+      // discussions from 'localhost:1313' on your Disqus account...
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = '{{ .Site.DisqusShortname }}';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  <!-- <a href="http://disqus.com/" class="dsq-brlink" target="_blank">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+  </div>
+  {{- end }}
+
+    <!-- LiveRe -->
+  {{- if .Site.Params.livere.uid -}}
+	<div id="lv-container" class="disqus-comment" data-id="city" data-uid="{{ .Site.Params.livere.uid }}">
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://www.livere.com">comments powered by LiveRe.</a>
+    </noscript>
+   </div>
+  {{- end }}
+
+  <!-- valine -->
+  {{- if .Site.Params.valine.enable -}}
+  <div id="comments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 700);
+              clearInterval(checkExist);
+            }
+        }, 10);
+    }
+  </script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#comments' ,
+        appId: '{{ .Site.Params.valine.appId }}',
+        appKey: '{{ .Site.Params.valine.appKey }}',
+        notify: {{ .Site.Params.valine.notify }}, 
+        verify: {{ .Site.Params.valine.verify }}, 
+        avatar:'{{ .Site.Params.valine.avatar }}', 
+        placeholder: '{{ .Site.Params.valine.placeholder }}',
+        visitor: {{ false }}
+    });
+  </script>
+  {{- end }}
+
+{{- end }}

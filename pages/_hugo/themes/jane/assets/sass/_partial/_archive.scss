@@ -1,0 +1,131 @@
+// ==============================
+// Archive
+// =============================
+
+.archive {
+  // margin: $archive-margin;
+  // max-width: $archive-max-width;
+  margin: 0 5em 3em;
+  background-color: white;
+  padding: 1em 5em 5em 5em;
+
+  .archive-title {
+    font-family: $global-serif-font-family;
+
+    &.tag,
+    &.category,
+    &.author {
+      margin: 20px 0;
+    }
+
+    .archive-name {
+      margin: 0;
+      display: inline-block;
+      font-weight: 400;
+      font-size: $archive-name-font-size;
+      line-height: $archive-name-font-size + 2px;
+    }
+
+    .archive-post-counter {
+      display: none;
+      color: $dark-gray;
+    }
+  }
+
+  .collection-title {
+    font-family: $global-serif-font-family;
+  
+    .archive-year {
+      margin: 2em 0 0;
+      font-weight: 400;
+      font-size: $collection-title-font-size;
+      line-height: $collection-title-font-size + 2px;
+    }
+  }
+
+  .archive-post {
+    padding: $archive-post-padding;
+    border-bottom: $archive-post-border;
+    font-size: 1.1em;
+    display: table;
+    width: 100%;
+
+    .archive-post-time {
+       color: $dark-gray;
+      display: table-cell;
+      width: 7em;
+      vertical-align: middle;
+    }
+
+    .archive-post-title {
+      display: table-cell;
+      vertical-align: middle;
+      
+      .archive-post-link {
+        color: $theme-color;
+      }
+    }
+
+    &::first-child {
+      margin-top: 10px;
+    }
+
+    &:hover {
+      // border-left: $archive-post-hover-border-left;
+      transition: $archive-post-hover-transition;
+      transform: $archive-post-hover-transform;
+
+      .archive-post-time {
+        color: darken($dark-gray, 10%);
+      }
+
+      .archive-post-title .archive-post-link {
+        color: darken($theme-color, 10%);
+      }
+    }
+  }
+
+  .more-post {
+    text-align: right;
+    
+    .more-post-link {
+      margin-top: 1em;
+      color: $theme-color;
+      font-size: 1.1em;
+      font-family: $global-serif-font-family;
+    
+      &:hover {
+        border-bottom: $post-readMore-border-bottom;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .archive {
+    margin: 0 auto 1em auto;
+    padding: 1em;
+
+    .archive-title .archive-name {
+      font-size: $archive-name-font-size - 4px;
+    }
+
+    .collection-title .archive-year {
+      margin: 10px 0;
+      font-size: $collection-title-font-size - 4px;
+    }
+
+    .archive-post {
+      padding: $archive-post-mobile-padding;
+
+      .archive-post-time {
+        font-size: $archive-post-mobile-time-font-size;
+        display: block;
+      }
+
+      .archive-post-title {
+        display: block;
+      }
+    }
+  }
+}

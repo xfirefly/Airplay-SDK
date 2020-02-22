@@ -1,0 +1,154 @@
+{{ define "title" }}{{ i18n .Data.Plural | default (title .Data.Plural ) }} - {{ .Site.Title }}{{ end }}
+
+{{ define "content" }}
+  {{ $termName := .Data.Singular }}
+  {{ $terms := .Data.Terms.ByCount }}
+  {{ $length := len $terms }}
+  {{ $type := .Type }}
+
+  <!-- Categories Page -->
+  {{ if and $.Site.Taxonomies.categories (eq $termName "category") }}
+    {{ range $terms }}
+    {{ $term := .Term }}
+    {{ $pages := .Pages }}
+    {{ with $.Site.GetPage "taxonomy" (printf "%s/%s" $type $term) }}
+      <section id="archive" class="archive">
+        <div class="archive-title">
+        </div>
+          <div class="collection-title">
+            <h2 class="archive-year">
+              <a href="{{ .Permalink }}">
+                {{ i18n "category" }}{{ $term }}
+              </a>
+            </h2>
+          </div>
+
+          {{ range first 5 $pages }}
+            <div class="archive-post">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
+                {{ .Date.Format "2006-01-02" }}
+              </time>
+              <span class="archive-post-title">
+                <a href="{{ .RelPermalink }}" class="archive-post-link">
+                  {{ .Title }}
+                </a>
+              </span>
+            </div>
+          {{ end }}
+          {{ if gt (len $pages) 5 }}
+            <div class="more-post">
+              <a href="{{ .Permalink }}" class="more-post-link">{{ i18n "morePost" }}</a>
+            </div>
+          {{ end }}
+      </section>
+    {{ end }}
+    {{ end }}
+
+  <!-- Tag cloud Page -->
+  {{ else if and $.Site.Taxonomies.tags (eq $termName "tag") }}
+    {{ $fontUnit := "rem" }}
+    {{ $largestFontSize := 2.0 }}
+    {{ $largestFontSize := 2.5 }}
+    {{ $smallestFontSize := 1.0 }}
+    {{ $fontSpread := sub $largestFontSize $smallestFontSize }}
+    {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
+    {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
+    {{ $spread := sub $max $min }}
+    {{ $fontStep := div $fontSpread $spread }}
+    <div class="tag-cloud" style="padding: 5px 15px">
+      <div class="tag-cloud-title">
+        {{ i18n "counter_tagcloud" $length}}
+      </div>
+      <div class="tag-cloud-tags">
+      {{ range $tagName, $taxonomy := $.Site.Taxonomies.tags }}
+        {{ $currentTagCount := len $taxonomy.Pages }}
+        {{ $currentFontSize := (add $smallestFontSize (mul (sub $currentTagCount $min) $fontStep) ) }}
+        {{ $count := len $taxonomy.Pages }}
+        {{ $weigth := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+        {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth) ) }}
+        {{ with $.Site.GetPage "taxonomy" (printf "%s/%s" $type $tagName) }}
+        <!--Current font size: {{$currentFontSize}}-->
+        <a href="{{ .Permalink }}"
+          style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ $tagName }}</a>
+        {{ end }}
+      {{ end }}
+      </div>
+    </div>
+  <!-- Author Page -->
+  {{ else if and $.Site.Taxonomies.author (eq $termName "author") }}
+    {{ range $terms }}
+    {{ $term := .Term }}
+    {{ $pages := .Pages }}
+    {{ with $.Site.GetPage "taxonomy" (printf "%s/%s" $type $term) }}
+      <section id="archive" class="archive">
+        <div class="archive-title">
+        </div>
+          <div class="collection-title">
+            <h2 class="archive-year">
+              <a href="{{ .Permalink }}">
+                {{- $author := (index ($.Site.Data.authors | default dict) $term) -}}
+                {{- $author_lang := (index ($author | default dict) $.Site.Language.Lang) -}}
+                {{- $author_name := $author_lang.name.display | default $author.name.display | default $term -}}
+                {{ i18n "author_item" }}{{ $author_name }}
+              </a>
+            </h2>
+          </div>
+
+          {{ range first 5 $pages }}
+            <div class="archive-post">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
+                {{ .Date.Format "2006-01-02" }}
+              </time>
+              <span class="archive-post-title">
+                <a href="{{ .RelPermalink }}" class="archive-post-link">
+                  {{ .Title }}
+                </a>
+              </span>
+            </div>
+          {{ end }}
+          {{ if gt (len $pages) 5 }}
+            <div class="more-post">
+              <a href="{{ .Permalink }}" class="more-post-link">{{ i18n "morePost" }}</a>
+            </div>
+          {{ end }}
+      </section>
+    {{ end }}
+    {{ end }}
+  {{ else }}
+  {{ range $terms }}
+    {{ $term := .Term }}
+    {{ $pages := .Pages }}
+    {{ with $.Site.GetPage "taxonomy" (printf "%s/%s" $type $term)}}
+    <section id="archive" class="archive">
+      <div class="archive-title"></div>
+      <div class="collection-title">
+        <h2 class="archive-year">
+          <a href="{{ .Permalink }}">
+            {{ i18n $termName | default (printf "%s: " (title $termName)) }}{{ $term }}
+          </a>
+        </h2>
+      </div>
+      {{ range first 5 $pages }}
+            <div class="archive-post">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
+                {{ .Date.Format "2006-01-02" }}
+              </time>
+              <span class="archive-post-title">
+                <a href="{{ .RelPermalink }}" class="archive-post-link">
+                  {{ .Title }}
+                </a>
+              </span>
+            </div>
+          {{ end }}
+          {{ if gt (len $pages) 5 }}
+            <div class="more-post">
+              <a href="{{ .Permalink }}" class="more-post-link">{{ i18n "morePost" }}</a>
+            </div>
+          {{ end }}
+    </section>
+    {{ end }}
+  {{ end }}
+
+  {{ end }}
+
+{{ end }}

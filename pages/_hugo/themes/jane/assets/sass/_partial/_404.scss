@@ -1,0 +1,25 @@
+// ==============================
+// Archive
+// =============================
+
+.not-found {
+  text-align: center;
+
+  .error-emoji {
+    color: #363636;
+    font-size: 3rem;
+  }
+
+  .error-text {
+    color: #797979;
+    font-size: 1.25rem;
+  }
+
+  .error-link {
+    margin-top: 2rem;
+
+    a {
+      color: $theme-color;
+    }
+  }
+}
