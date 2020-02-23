@@ -20,7 +20,7 @@ title = "蓝莓投屏 使用教程"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
-paginate = 7
+paginate = 70
 canonifyurls = true
 
 [permalinks]
@@ -148,7 +148,7 @@ canonifyurls = true
   imageGallery = true
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
-  thumbnailImage = true
+  thumbnailImage = false
   # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
   # Set this value to `right` if you have old posts to keep the old style on them
   # and define `thumbnailImagePosition` on a post to overwrite this setting
