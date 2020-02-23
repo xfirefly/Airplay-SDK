@@ -1,5 +1,5 @@
 ---
-title: "蓝莓投屏Windows版"
+title: "蓝莓投屏Windows版使用必读"
 thumbnailImagePosition: top
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
 # coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
