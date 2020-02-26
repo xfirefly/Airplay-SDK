@@ -1,7 +1,7 @@
 [[ENGLISH README]](README_EN.md)
 
 ## Airplay Receiver For Android & Windows
-[扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验
+[扫码安装App](http://d.deeprd.com/nlpv) 或者下载仓库里的App即可体验
 
 - [Windows Airplay 接收端](windows-receiver)
 - [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) | [Github]( https://github.com/xfirefly/Airplay-SDK ) | [官网](http://deeprd.com/) 
@@ -16,7 +16,7 @@
 -	对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感,  iOS 和Android延时120ms左右, 电脑投屏 150ms左右
 -	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
 - [Windows 镜像发送端](http://fenti.me/yi)
-- [Android 镜像发送端](https://fir.im/pfad)
+- [Android 镜像发送端](http://d.deeprd.com/pfad)
 
 
 ## 联系
