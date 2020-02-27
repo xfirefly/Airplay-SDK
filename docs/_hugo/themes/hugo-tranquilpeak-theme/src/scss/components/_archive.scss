@@ -1,0 +1,36 @@
+.archive-result {
+    display: none;
+}
+
+.archive {
+    .archive-title {
+        color: $font-color-base;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .archive-posts {
+        list-style: none;
+
+        .archive-post {
+            .archive-post-title {
+                margin-left: 10px;
+                color:       $font-color-base;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .archive-post-date {
+                color: map-get($colors, light);
+            }
+            // Change styl of the list by adding font-awesome icon
+            &::before {
+                font-family: 'FontAwesome';
+                content:     '\f0da';
+                font-size:   map-get($font-size, small);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.post-copyright {
+  padding: 10px;
+  background-color: hsla(0,0%,71%,.1);
+  border: 1px solid #e1e1e1;
+  border-left: solid;
+  margin-top: 3em;
+  width: 100%;
+
+  .copyright-item {
+    margin: 5px 0;
+
+    a {
+      color: $theme-color;
+      word-wrap: break-word;
+
+      &:hover {
+        border-bottom: $content-link-border;
+      }
+    }
+
+    .item-title {
+      display: table-cell;
+      min-width: 5rem;
+      // margin-right: .5rem;
+      text-align: right;
+      font-weight: bold;
+
+      &:after {
+        content: " :";
+      }
+    }
+
+    .item-content {
+      display: table-cell;
+      padding-left: .5rem;
+    }
+  }
+}

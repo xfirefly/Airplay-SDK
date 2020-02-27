@@ -1,0 +1,112 @@
+- id: archive
+  translation: Archiv
+
+- id: tags
+  translation: Tags
+
+- id: tag
+  translation: "Tag: "
+
+- id: categories
+  translation: Kategorie
+
+- id: category
+  translation: "Kategorie: "
+
+- id: authors
+  translation: Autoren
+
+- id: author_item
+  translation: "Autor: "
+
+# posts
+- id: prev
+  translation: Vorherige
+
+- id: next
+  translation: Nächste
+
+- id: prev_post
+  translation: Vorheriger Artikel
+
+- id: next_post
+  translation: Nächster Artikel
+
+- id: toc
+  translation: Inhaltsverzeichnis
+
+- id: readmore
+  translation: Weiterlesen
+
+- id: reward
+  translation: Reward
+
+- id: rewardAlipay
+  translation: Alipay
+
+- id: rewardWechat
+  translation: Wechat
+
+- id: seeMarkDown
+  translation: Markdown Version »
+
+- id: loadDisqus
+  translation: Zeige Kommentare via Disqus
+
+# posts.header
+- id: wordCount
+  translation: "{{.Count}} Wörter"
+
+- id: readingTime
+  translation: "{{.Count}} Minuten Lesezeit"
+
+# copyright
+- id: author
+  translation: Autor
+
+- id: lastMod
+  translation: Bearbeitet
+
+- id: markdown
+  translation: Markdown
+
+- id: license
+  translation: Lizenz
+
+# counter
+- id: counter_archives
+  translation: "{{.Count}} Artikel gesamt"
+
+- id: counter_tagcloud
+  translation: "{{.Count}} Tags gesamt"
+
+- id: counter_categories
+  translation: "{{.Count}} Kategorien gesamt"
+
+# other
+- id: morePost
+  translation: "Weiterlesen >>>"
+
+- id: read_ru
+  translation: Читать на русском
+
+- id: read_es
+  translation: Leer en español
+
+- id: read_zh-cn
+  translation: 中文阅读
+
+- id: read_zh-tw
+  translation: 中文閱讀
+
+- id: read_pt
+  translation: Leia em português
+
+- id: read_fr
+  translation: Lire en français
+
+- id: language
+  translation: Sprache
+
+- id: comments
+  translation: Kommentare

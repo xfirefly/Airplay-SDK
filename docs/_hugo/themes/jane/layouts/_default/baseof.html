@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    {{- block "title" . -}}
+      {{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
+    {{- end -}}
+  </title>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "slideout.html" . }}
+
+  {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
+    {{ partial "photoswipe.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.search.google.enable }}
+    {{ partial "search_google.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.forkMeOnGithub }}
+    <style>
+      .fork-me-on-github {
+        position: absolute; top: 0; left: 0; border: 0;
+      }
+      @media (max-width: 1080px) {
+        .fork-me-on-github {
+          display: none;
+        }
+      }
+    </style>
+
+    <a href="{{ .Site.Params.forkMeOnGithub }}">
+      <img class="fork-me-on-github"
+        src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
+        alt="Fork me on GitHub">
+    </a>
+  {{ end }}
+
+  <header id="header" class="header container">
+    {{ partial "header.html" . }}
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          {{ block "content" . }}{{ end }}
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      {{ partial "footer.html" . }}
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        {{/* icon up */}}
+        {{ partial "svg/up.svg" }}
+      </i>
+    </div>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>

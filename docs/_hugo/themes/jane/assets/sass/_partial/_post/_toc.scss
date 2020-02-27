@@ -1,0 +1,72 @@
+.post-toc {
+
+  .post-toc-title {
+    font-size: 1em;
+    max-width: 9em;
+    border: 0;
+    font-weight: normal;
+    padding: 0.05em 0.5em;
+    line-height: 1em;
+  }
+
+  .post-toc-content {
+    display: block;
+    padding: 0.5em 2em 0.5em 0.5em;
+    margin-top: -1.5em;
+    line-height: 1.3em;
+
+    /* Hugo Table of Contents have extra dot in front */
+    ul {
+      padding-left: 20px;
+      list-style-type: none;
+
+      ul {
+        list-style: disc;
+
+        ul {
+          list-style: circle;
+        }
+
+        li > a {
+          color: #139;
+        }
+
+        li > a:hover{
+          color: #900;
+        }
+      }
+    }
+  }
+
+}
+
+@include min-screen() {
+  .post-toc {
+    display: none;
+    border: 1px solid #CCC;
+    background: white;
+    box-shadow: 0 0 1em #777777;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-height: 80%;
+    overflow: auto;
+    z-index: 99;
+
+    .post-toc-content {
+      display: none;
+    }
+
+    &:hover .post-toc-content {
+      display: block;
+    }
+  }
+}
+
+@include max-screen() {
+  .post-toc {
+    padding: 10px;
+    border-bottom: 2px LightGrey solid;
+    word-wrap: break-word;
+  }
+}

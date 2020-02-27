@@ -1,0 +1,5 @@
+<footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; {{ now.Format "2006" }} {{ with .Site.Params.footer.copyright }}{{ . | safeHTML }}{{ else }}{{ with .Site.Author.name }}{{ . }}{{ else }}{{ with .Site.Title }}{{ . }}{{ end }}{{ end }}{{ end }}. {{ i18n "footer.all_rights_reserved" }}
+  </span>
+</footer>

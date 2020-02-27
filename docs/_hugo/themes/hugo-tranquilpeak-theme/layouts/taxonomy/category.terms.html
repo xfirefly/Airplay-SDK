@@ -1,0 +1,126 @@
+{{ if $.Site.Params.hierarchicalCategories }}
+  {{ $.Scratch.Set "max-level" 0 }}
+  {{ range where $.Site.RegularPages "Type" "post" }}
+    {{ $page := . }}
+    {{ if .Params.categories }}
+      {{ $categories := (apply .Params.categories "urlize" ".") }}
+      {{ range $index,$value := .Params.categories }}
+        {{ if gt $index ($.Scratch.Get "max-level") }}
+          {{ $.Scratch.Set "max-level" $index }}
+        {{ end }}
+        {{ $path := (printf "%s" (delimit (first (add $index 1) $categories) " ")) }}
+        {{ $name := (printf "%s-%d" ($value | urlize) $index) }}
+        {{ $level := (printf "categories-level-%d" $index) }}
+        {{ if $.Scratch.Get $name }}
+          {{ $category := ($.Scratch.Get $name) }}
+          {{ if and (not (in $category.parent ($.Scratch.Get "parent"))) (gt $index 0) }}
+            {{ $node := (dict "path" $path "name" $category.name "parents" (split (printf "%s,%s" (delimit $category.parents ",") ($.Scratch.Get "parent")) ",")) }}
+            {{ $.Scratch.Set $path $node }}
+            {{ $.Scratch.SetInMap $level $path $node }}
+          {{ end }}
+        {{ else }}
+          {{ $node := (dict "path" $path "name" $value "parents" (split ($.Scratch.Get "parent") ",")) }}
+          {{ $.Scratch.Set $name $node }}
+          {{ $.Scratch.SetInMap $level $path $node }}
+        {{ end }}
+        {{ $.Scratch.SetInMap (printf "%s" (delimit (first (add $index 1) $categories) "/")) $page.File.UniqueID $page }}
+        {{ $.Scratch.Set "parent" $path }}
+      {{ end }}
+      {{ $.Scratch.Set "parent" nil }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ partial "head.html" . }}
+  <body>
+    <div id="blog">
+      {{ partial "header.html" . }}
+      {{ partial "sidebar.html" . }}
+      {{ partial "post/header-cover.html" . }}
+      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
+        class="{{ with .Params.coverImage }}hasCover{{ end }}
+               {{ if eq .Params.coverMeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
+               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+
+        <div id="categories-archives" class="main-content-wrap">
+          <form id="filter-form" action="##">
+            <input name="category" type="text" class="form-control input--xlarge"
+                   placeholder="{{ i18n "global.search_category" }}" autofocus="autofocus">
+          </form>
+          <h5 class="archive-result text-color-base text-xlarge"
+              data-message-zero="{{ i18n "global.categories_found.zero" }}"
+              data-message-one="{{ i18n "global.categories_found.one" }}"
+              data-message-other="{{ i18n "global.categories_found.other" }}"></h5>
+          <section class="boxes">
+            {{ if $.Site.Params.hierarchicalCategories }}
+              {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
+                {{ $path := .path }}
+                <div>
+                  <a href="#posts-list-{{ .name | urlize }}" class="category-anchor" data-category="{{ .name }}" data-parent-categories="">{{ .name }}</a>
+                  {{ range seq ($.Scratch.Get "max-level") }}
+                    {{ $index := . }}
+                    {{ range $.Scratch.GetSortedMapValues (printf "categories-level-%d" $index) }}
+                      {{ partial "internal/recursive-categories-1.html" (dict "scratch" $.Scratch "category" . "level" $index "parent" $path) }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+              {{ end }}
+            {{ else }}
+              {{ range .Data.Terms.ByCount }}
+                <div>
+                  <a href="#posts-list-{{ .Name | urlize }}" class="category-anchor" data-category="{{ .Name }}">{{ .Name }}</a>
+                </div>
+              {{ end }}
+            {{ end }}
+          </section>
+          <section class="boxes">
+            {{ if $.Site.Params.hierarchicalCategories }}
+              {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
+                {{ $path := .path }}
+                <div id="posts-list-{{ .name | urlize }}" class="archive box" data-category="{{ .name }}" data-parent-categories="" style="display: block;">
+                  <h4 class="archive-title text-xlarge">
+                    <a class="link-unstyled" href="{{ .name | urlize }}">{{ .name }} ({{ $.Scratch.GetSortedMapValues $path | len }})</a>
+                  </h4>
+                  <ul class="archive-posts">
+                    {{ range ($.Scratch.GetSortedMapValues $path) }}
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
+                      </li>
+                    {{ end }}
+                    {{ range seq ($.Scratch.Get "max-level") }}
+                      {{ $index := . }}
+                      {{ range $.Scratch.GetSortedMapValues (printf "categories-level-%d" $index) }}
+                        {{ partial "internal/recursive-categories-full-1.html" (dict "scratch" $.Scratch "category" . "level" $index "parent" $path) }}
+                      {{ end }}
+                    {{ end }}
+                  </ul>
+                </div>
+              {{ end }}
+            {{ else }}
+              {{ range .Data.Terms.ByCount }}
+              <div id="posts-list-{{ .Name | urlize }}" class="archive box" data-category="{{ .Name }}" style="display: block;">
+                <h4 class="archive-title text-xlarge">
+                  <a class="link-unstyled" href="{{ .Name | urlize }}">{{ .Name }} ({{ .Pages | len }})</a>
+                </h4>
+                <ul class="archive-posts">
+                  {{ range .Pages.ByDate }}
+                    <li class="archive-post">
+                      <a class="archive-post-title" href="{{ .Permalink }}">
+                        {{ .Title }}
+                      </a>
+                      <span class="archive-post-date"> - {{ partial "internal/date" . }}</span>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+              {{ end }}
+            {{ end }}
+          </section>
+        </div>
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+    {{ partial "about.html" . }}
+    {{ partial "cover.html" . }}
+  </body>
+  {{ partial "script.html" . }}
+</html>

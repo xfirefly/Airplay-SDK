@@ -1,0 +1,83 @@
+<div class="post-actions-wrap">
+  {{ if not (eq .Params.showActions false) }}
+      <nav {{ if eq .Params.showPagination false }}style="visibility: hidden"{{ end }}>
+        <ul class="post-actions post-action-nav">
+          {{ if .Site.Params.swapPaginator }}
+            <li class="post-action">
+              {{ with .PrevInSection }}
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+              {{ else }}
+                <a class="post-action-btn btn btn--disabled">
+              {{ end }}
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">{{ i18n "pagination.previous" }}</span>
+                </a>
+            </li>
+            <li class="post-action">
+              {{ with .NextInSection }}
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+              {{ else }}
+                <a class="post-action-btn btn btn--disabled">
+              {{ end }}
+                  <span class="hide-xs hide-sm text-small icon-mr">{{ i18n "pagination.next" }}</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          {{ else }}
+            <li class="post-action">
+              {{ with .NextInSection }}
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+              {{ else }}
+                <a class="post-action-btn btn btn--disabled">
+              {{ end }}
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">{{ i18n "pagination.next" }}</span>
+                </a>
+            </li>
+            <li class="post-action">
+              {{ with .PrevInSection }}
+                <a class="post-action-btn btn btn--default tooltip--top" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+              {{ else }}
+                <a class="post-action-btn btn btn--disabled">
+              {{ end }}
+                  <span class="hide-xs hide-sm text-small icon-mr">{{ i18n "pagination.previous" }}</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      {{ if (not (eq .Params.showSocial false)) }}
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        {{ range .Site.Params.sharingOptions }}
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="{{ printf .url $.Permalink }}">
+              <i class="fa {{ .icon }}"></i>
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if and (not (eq .Params.comments false)) .Site.DisqusShortname }}
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      {{ end }}
+      <li class="post-action">
+        {{ if findRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" .Content }}
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        {{ else }}
+          <a class="post-action-btn btn btn--default" href="#">
+        {{ end }}
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  {{ end }}
+</div>

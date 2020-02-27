@@ -1,0 +1,53 @@
+/// Mixin helper to stylized post header cover in extra small size
+/// minus width of sidebar on extra large screen
+@mixin post-header-cover-xs {
+    width: calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    left:  map-get($sidebar, xlg-screen-width);
+}
+
+/// Mixin helper to stylized post header cover in small size
+/// minus width of sidebar on large screen
+@mixin post-header-cover-sm {
+    width: calc(100% - #{map-get($sidebar, lg-screen-width)});
+    left:  map-get($sidebar, lg-screen-width);
+}
+
+/// Mixin helper to stylized post header cover in medium size
+/// minus width of sidebar on medium screen
+@mixin post-header-cover-md {
+    width: calc(100% - #{map-get($sidebar, md-screen-width)});
+    left:  map-get($sidebar, md-screen-width);
+}
+
+/// Mixin helper to stylized post header cover in large size
+@mixin post-header-cover-lg {
+    width: 100%;
+    left:  0;
+}
+
+/// Mixin helper to pushed post header cover from medium sidebar size
+@mixin post-header-cover-pushed-md {
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
+    &.pushed {
+        margin-left: #{map-get($sidebar, md-screen-width)};
+        width: calc(100% - #{map-get($sidebar, md-screen-width)});
+    }
+}
+
+/// Mixin helper to pushed post header cover from large sidebar size
+@mixin post-header-cover-pushed-lg {
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
+    &.pushed {
+        margin-left: #{map-get($sidebar, lg-screen-width)};
+        width: calc(100% - #{map-get($sidebar, lg-screen-width)});
+    }
+}
+
+/// Mixin helper to pushed post header cover from extra large sidebar size
+@mixin post-header-cover-pushed-xlg {
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
+    &.pushed {
+        margin-left: #{map-get($sidebar, xlg-screen-width)};
+        width: calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    }
+}

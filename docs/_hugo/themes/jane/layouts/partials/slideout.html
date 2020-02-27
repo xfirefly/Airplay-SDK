@@ -1,0 +1,92 @@
+<div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="{{ "/" | relLangURL }}" class="logo">
+      {{- if .Site.Params.logoTitle -}}
+        {{ .Site.Params.logoTitle | safeHTML }}
+      {{- else -}}
+        {{ .Site.Title }}
+      {{- end -}}
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    {{ range .Site.Menus.main -}}
+
+      <li class="mobile-menu-item">
+        {{ if .HasChildren }}
+          <!-- drop down navigation MENU -->
+          <div class="mobile-menu-parent">
+            <span class="mobile-submenu-open"></span>
+            <a href="{{ .URL | absLangURL | safeURL }}">
+              {{ .Name }}
+            </a>
+          </div>
+          <ul class="mobile-submenu-list">
+            {{ range .Children }}
+              <li>
+                <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ else }}
+          <!-- normal MENU -->
+          {{ if hasPrefix .URL "http" }}
+            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
+              {{ .Name }}
+              {{/* icon new window */}}
+              <i class="iconfont">
+                {{ partial "svg/new_window.svg" }}
+              </i>
+            </a>
+          {{ else }}
+            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+          {{ end }}
+        {{ end  }}
+      </li>
+
+    {{- end }}
+    {{ if and (gt (len .Site.Home.AllTranslations) 1) (.Site.Params.showMenuLanguageChooser | default false ) }}
+      {{- $.Scratch.Set "language" .Language -}}
+      <li class="mobile-menu-item">
+        <!-- drop down navigation MENU -->
+        <div class="mobile-menu-parent mobile-menu-item-lang">
+          <span class="mobile-submenu-open"></span>
+          <a href="#">
+            {{/* icon globe */}}
+            <i class="iconfont">
+              {{ partial "svg/globe.svg" }}
+            </i>
+            {{ i18n "language" }}
+          </a>
+        </div>
+        <ul class="mobile-submenu-list">
+          {{ range .Site.Home.AllTranslations }}
+            <li>
+              {{ if eq ($.Scratch.Get "language") .Language }}
+                <a href="{{ .Permalink }}"><strong>{{ .Language.LanguageName }}</strong></a>
+              {{ else }}
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </li>
+    {{- end }}
+
+    {{ if .Site.Params.search.google.enable }}
+      <li class="mobile-menu-item">
+        <a id="openSearchMobile" class="mobile-menu-item-link menu-item-search" href="#">
+          <i class="iconfont">
+            {{ partial "svg/search.svg" }}
+          </i>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

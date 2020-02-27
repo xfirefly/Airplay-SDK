@@ -1,0 +1,70 @@
+.modal-container {
+    position:   fixed;
+    top:        0;
+    left:       0;
+    width:      100%;
+    height:     100%;
+    box-sizing: border-box;
+    z-index:    map-get($z-indexes, 'c-modal');
+}
+
+.modal {
+    width:      100%;
+    height:     100%;
+    max-width:  #{map-get($main-content, 'max-width')};
+    box-sizing: border-box;
+    position:   relative;
+    margin:     0 auto;
+    padding:    0;
+    overflow:   hidden;
+
+    &-header {
+        position:      relative;
+        padding:       10px 15px 0;
+        background:    white;
+        border-bottom: 1px solid #eef2f8;
+    }
+    &-body {
+        position:   relative;
+        padding:    0 15px;
+        overflow-y: auto;
+        background: white;
+    }
+    &-footer {
+        height:     50px;
+        padding:    0 15px;
+        background: white;
+        border-top: 1px solid #eef2f8;
+    }
+    .close-button {
+        position: absolute;
+        // perfect position
+        top:      9px;
+        right:    15px;
+        color:    $font-color-base;
+        cursor:   pointer;
+    }
+}
+
+.overlay {
+    display:    none;
+    background: rgba(0, 0, 0, 0.50);
+    width:      100%;
+    height:     100%;
+    position:   fixed;
+    top:        0;
+    left:       0;
+    z-index:    map-get($z-indexes, 'c-overlay');
+    overflow:   hidden;
+}
+
+@media #{$medium-and-up} {
+    .modal-container {
+        padding:   50px 0;
+        left:      50%;
+        transform: translateX(-50%);
+    }
+    .modal {
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,22 @@
+/// Mixin helper to push header from medium sidebar size
+@mixin header-pushed-md {
+    &.pushed {
+        margin-left: #{map-get($sidebar, md-screen-width)};
+        width: calc(100% - #{map-get($sidebar, md-screen-width)});
+    }
+}
+
+/// Mixin helper to push header from large sidebar size
+@mixin header-pushed-lg {
+    &.pushed {
+        margin-left: #{map-get($sidebar, lg-screen-width)};
+        width: calc(100% - #{map-get($sidebar, lg-screen-width)});
+    }
+}
+/// Mixin helper to push header from extra large sidebar size
+@mixin header-pushed-xlg {
+    &.pushed {
+        margin-left: #{map-get($sidebar, xlg-screen-width)};
+        width: calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    }
+}

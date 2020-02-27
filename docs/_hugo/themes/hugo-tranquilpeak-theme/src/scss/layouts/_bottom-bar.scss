@@ -1,0 +1,124 @@
+// bottom bar which contains navigation and share options
+#bottom-bar {
+    display:            none;
+    position:           fixed;
+    bottom:             0;
+    height:             60px;
+    background:         white;
+    margin:             0;
+    border-top:         1px solid #eef2f8;
+    padding:            0 15px;
+    z-index:            map-get($z-indexes, c-post-bottom-bar);
+    transition:         transform .25s ease-in-out;
+    -webkit-transition: -webkit-transform .25s ease-in-out;
+
+    min-width: $main-width - 15px * 2;
+    @media only screen and (max-width: $main-width - 15px * 2) {
+        min-width: calc(100% - 15px * 2);
+    }
+}
+
+@media #{$small-and-down} {
+    #bottom-bar {
+        // Display bottom bar in large size
+        @include bottom-bar-lg;
+
+        // Push the bottom bar from the size of the large sidebar
+        &[data-behavior="1"],
+        &[data-behavior="2"],
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include bottom-bar-pushed-lg;
+        }
+        // Push the bottom bar from the size of the medium sidebar
+        &[data-behavior="3"],
+        &[data-behavior="6"] {
+            @include bottom-bar-pushed-md;
+        }
+    }
+}
+
+@media #{$medium-only} {
+    #bottom-bar {
+        // Display bottom bar in medium size and push it from the size of the medium sidebar
+        &[data-behavior="1"],
+        &[data-behavior="2"],
+        &[data-behavior="3"] {
+            @include bottom-bar-md;
+            @include bottom-bar-pushed-md;
+        }
+        // Display bottom bar in large size and push it from the size of the large sidebar
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-lg;
+        }
+        // Display bottom bar in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-md;
+        }
+    }
+}
+
+@media #{$large-only} {
+    #bottom-bar {
+        // Display bottom bar in small size and push it from the size of the large sidebar
+        &[data-behavior="1"],
+        &[data-behavior="2"] {
+            @include bottom-bar-sm;
+            @include bottom-bar-pushed-lg;
+        }
+        // Display bottom bar in medium size and push it from the size of the medium sidebar
+        &[data-behavior="3"] {
+            @include bottom-bar-md;
+            @include bottom-bar-pushed-md;
+        }
+        // Display bottom bar in large size and push it from the size of the large sidebar
+        &[data-behavior="4"],
+        &[data-behavior="5"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-lg;
+        }
+        // Display bottom bar in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-md;
+        }
+    }
+}
+
+@media #{$xlarge-and-up} {
+    #bottom-bar {
+        // Display bottom bar in extra small size and push it from the size of the extra large sidebar
+        &[data-behavior="1"] {
+            @include bottom-bar-xs;
+            @include bottom-bar-pushed-xlg;
+        }
+        // Display bottom bar in small size and push it from the size of the large sidebar
+        &[data-behavior="2"] {
+            @include bottom-bar-sm;
+            @include bottom-bar-pushed-lg;
+        }
+        // Display bottom bar in medium size and push it from the size of the medium sidebar
+        &[data-behavior="3"] {
+            @include bottom-bar-md;
+            @include bottom-bar-pushed-md;
+        }
+        // Display bottom bar in large size and push it from the size of the extra large sidebar
+        &[data-behavior="4"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-xlg;
+        }
+        // Display bottom bar in large size and push it from the size of the extra large sidebar
+        &[data-behavior="5"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-lg;
+        }
+        // Display bottom bar in large size and push it from the size of the medium sidebar
+        &[data-behavior="6"] {
+            @include bottom-bar-lg;
+            @include bottom-bar-pushed-md;
+        }
+    }
+}

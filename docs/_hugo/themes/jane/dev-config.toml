@@ -1,0 +1,214 @@
+# This config file only for develop
+# This file is hugo-theme-jane demo-site config
+
+baseURL = "https://www.xianmin.org/hugo-theme-jane/"
+# title = "Jane - A simple theme for Hugo"
+enableRobotsTXT = true
+enableEmoji = true
+
+mainSections = ["post"]
+
+hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
+paginate = 5                                              # 首页每页显示的文章数
+rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
+disqusShortname = "xianmin12"      # disqus_shortname
+googleAnalytics = "UA-34199129-1"      # UA-XXXXXXXX-X
+copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+# uglyURLs = true
+
+# Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
+pygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
+pygmentsUseClasses = true # Use CSS classes to format highlighted code
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = "linenos=table"
+
+# language support en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
+[langusges]
+[languages.en]
+  title = "Jane - A simple theme for Hugo"
+  languageName = "English"
+  weight = 1
+[languages.zh-cn]
+  title = "Jane —— 一个简洁的 Hugo 主题"
+  languageName = "中文"
+  weight = 2
+
+[[languages.en.menu.main]]
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+
+[[languages.en.menu.main]]
+  name = "Docs"
+  weight = 11
+  identifier = "docs"
+  url = "/categories/docs/"
+
+# docs submenu
+#[[languages.en.menu.main]]
+#  name = "Jane Theme Preview"
+#  weight = 12
+#  parent = "docs"
+#  url = "/post/jane-theme-preview/"
+
+[[languages.en.menu.main]]
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[languages.en.menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[languages.en.menu.main]]
+  name = "Categories"
+  weight = 40
+  identifier = "categories"
+  url = "/categories/"
+[[languages.en.menu.main]]
+  name = "external-link"
+  weight = 50
+  url = "https://gohugo.io"
+
+[[languages.zh-cn.menu.main]]
+  name = "主页"
+  weight = 10
+  identifier = "home"
+  url = "zh-cn/"
+[[languages.zh-cn.menu.main]]
+  name = "归档"
+  weight = 20
+  identifier = "archives"
+  url = "zh-cn/post/"
+[[languages.zh-cn.menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "zh-cn/tags/"
+[[languages.zh-cn.menu.main]]
+  name = "分类"
+  weight = 40
+  identifier = "categories"
+  url = "zh-cn/categories/"
+[[languages.zh-cn.menu.main]]
+  name = "外部链接"
+  weight = 50
+  url = "https://gohugo.io"
+
+
+[author]                  # essential                     # 必需
+  name = "xianmin"
+
+[sitemap]                 # essential                     # 必需
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+
+[params]
+  debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+  since = "2017"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
+  rssFullContent = true     # if false, Rss feed instead of the summary
+
+  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
+  logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["Hugo", "theme","jane"]
+  description = "Hugo theme jane example site."
+
+  # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
+  archive-paginate = 10
+
+  # paginate style, default use numbered pagination links
+  # if true, use original "Previous" and "Next" links.
+  # paginateOriginalStyle = true
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2006-01-02"
+
+  # show word count and read time ?                       # 是否显示字数统计与阅读时间
+  moreMeta = true
+
+  # show language chooser in menu
+  showMenuLanguageChooser = true
+
+  # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
+  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+  toc = true                                                                            # 是否开启目录
+  photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
+  bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
+  mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
+
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+
+  changyanAppid = ""        # Changyan app id             # 畅言
+  changyanAppkey = ""       # Changyan app key
+  tencent_analytics = ""    # Tencent Analytics
+  baidu_push = false        # baidu push                  # 百度
+  baidu_analytics = ""      # Baidu Analytics
+  baidu_verification = ""   # Baidu Verification
+  google_verification = ""  # Google_Verification         # 谷歌
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+  # enable 'fork me on github', https://blog.github.com/2008-12-19-github-ribbons/
+  forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
+
+  [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
+    enable = false
+    jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
+    slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
+
+  [params.commento] # Commento is a feature rich lightweight comment system oriented on privacy (https://commento.io/)
+    enable = false
+    url = "http://commento.example.com"
+
+  [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
+    enable = true
+    repo = "xianmin/comments-for-hugo-theme-jane"    # The repo to store comments
+    issueTerm = "pathname"
+    theme = "github-light"                           # theme: github-light, github-dark, github-dark-orange, icy-dark, dark-blue, photon-dark
+
+  [params.search.google]    # google custom search, see https://cse.google.com
+    enable = true
+    id = "002186711602136249422:q1gkomof_em"
+    title = "Search"
+
+  # use public git repo url to link lastmod git commit, enableGitInfo should be true.
+  # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
+  [params.gitInfo]
+    gitRepo = "https://github.com/xianmin/hugo-theme-jane"
+    showCommitMessage = true
+
+  [params.reward]                                         # 文章打赏
+    enable = false
+    wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
+    alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
+
+  [params.social]                                         # 社交链接
+    a-email = "mailto:your@email.com"
+    b-stack-overflow = "http://en.xianmin.org/hugo-theme-jane/"
+    c-twitter = "http://en.xianmin.org/hugo-theme-jane/"
+    d-facebook = "http://en.xianmin.org/hugo-theme-jane/"
+    e-linkedin = "http://en.xianmin.org/hugo-theme-jane/"
+    f-google = "http://en.xianmin.org/hugo-theme-jane/"
+    g-github = "http://en.xianmin.org/hugo-theme-jane/"
+    h-weibo = "http://en.xianmin.org/hugo-theme-jane/"
+    i-zhihu = "http://en.xianmin.org/hugo-theme-jane/"
+    j-douban = "http://en.xianmin.org/hugo-theme-jane/"
+    k-pocket = "http://en.xianmin.org/hugo-theme-jane/"
+    l-tumblr = "http://en.xianmin.org/hugo-theme-jane/"
+    m-instagram = "http://en.xianmin.org/hugo-theme-jane/"
+    n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
+    o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
+    p-coding = "http://en.xianmin.org/hugo-theme-jane/"
+    q-bilibili = "http://en.xianmin.org/hugo-theme-jane/"
+    r-codeforces = "http://en.xianmin.org/hugo-theme-jane/"
+    s-mastodon = "http://en.xianmin.org/hugo-theme-jane/"

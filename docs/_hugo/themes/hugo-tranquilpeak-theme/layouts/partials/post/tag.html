@@ -1,0 +1,3 @@
+{{ range .Params.tags }}
+  <a class="tag tag--primary tag--small" href="{{ $.Site.LanguagePrefix }}/tags/{{ . | urlize }}/">{{ . }}</a>
+{{ end }}

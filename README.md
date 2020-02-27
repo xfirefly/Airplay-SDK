@@ -1,9 +1,10 @@
-[[English Readme]](README_EN.md)
+[[ENGLISH README]](README_EN.md)
 
-## Airplay Receiver SDK
-[扫码安装App](https://fir.im/nlpv) 或者下载仓库里的App即可体验
+## Airplay Receiver For Android & Windows
+[扫码安装App](http://d.deeprd.com/nlpv) 或者下载仓库里的App即可体验
 
-- [Gitee镜像]( https://gitee.com/halo-x/Airplay-SDK )
+- [Windows Airplay 接收端](windows-receiver)
+- [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) | [Github]( https://github.com/xfirefly/Airplay-SDK ) | [官网](http://deeprd.com/) 
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 -	支持Airplay/DLNA 和自有编码协议.
 -	iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
@@ -15,22 +16,18 @@
 -	对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感,  iOS 和Android延时120ms左右, 电脑投屏 150ms左右
 -	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
 - [Windows 镜像发送端](http://fenti.me/yi)
-- [Android 镜像发送端](https://fir.im/pfad)
-- [Windows Airplay 接收端](windows-receiver)
+- [Android 镜像发送端](http://d.deeprd.com/pfad)
 
-## SDK / 协议源码
-
-- 提供Airplay协议SDK, 亦可出售协议源码
 
 ## 联系
-
 - 微信: maxfirefly
 
 <img src="image/qrcode.png?raw=true" width="200" height="200">
 
+## 投屏教程
+![Alt text](image/cast.jpg?raw=true "Title")
 
-
-## 功能图片展示
+## 功能展示
 - MacOS 镜像
 ![Alt text](image/mac.jpg?raw=true "Title")
 
@@ -40,9 +37,7 @@
 - 蓝莓投屏对竖屏显示做了深度优化, 支持Airplay / Miracast / 蓝莓投屏手机端 竖屏显示, 延时低, 不损失原始画质
 ![Alt text](image/v.png?raw=true "Title")
 
-- 支持设置密码, 分辨率等
-![Alt text](image/main.png?raw=true "Title")
-![Alt text](image/setup.png?raw=true "Title")
+ 
 
 ## 其他问题
 App安装到有些平台, 可能出现镜像卡顿延时， 是因为各芯片公司的codec实现差异， 目前这个app主要在Rockchip / 高通手机 平台调试 .

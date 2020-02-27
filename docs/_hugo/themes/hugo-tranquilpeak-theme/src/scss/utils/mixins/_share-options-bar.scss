@@ -1,0 +1,20 @@
+/// Mixin helper to stylized `share-options-bar` div in extra small size
+@mixin share-options-bar-xs {
+    width:       calc(100% - #{map-get($sidebar, xlg-screen-width)});
+    left:    map-get($sidebar, xlg-screen-width);
+}
+/// Mixin helper to stylized `share-options-bar` div in small size
+@mixin share-options-bar-sm {
+    width:       calc(100% - #{map-get($sidebar, lg-screen-width)});
+    left:    map-get($sidebar, lg-screen-width);
+}
+/// Mixin helper to stylized `share-options-bar` div in medium size
+@mixin share-options-bar-md {
+    width:       calc(100% - #{map-get($sidebar, md-screen-width)});
+    left:    map-get($sidebar, md-screen-width);
+
+}
+/// Mixin helper to stylized `share-options-bar` div in large size
+@mixin share-options-bar-lg {
+    width:       100%;
+}

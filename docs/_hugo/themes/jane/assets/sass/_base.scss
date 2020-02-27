@@ -1,0 +1,105 @@
+@import '_common/normalize';
+
+html {
+  font-size: $global-font-size;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $global-font-family;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: $global-lineheight;
+  color: $global-font-color;
+  background: $global-background;
+  scroll-behavior: smooth;
+  // border-top: 3px solid $theme-color;
+}
+
+@include max-screen() {
+  body {
+    border-top: 0;
+  }
+}
+
+::selection {
+  background: $theme-color;
+  color: #fff; 
+}
+
+// ::-webkit-scrollbar {
+//   width: 8px;
+//   height: 6px; 
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: lighten($theme-color, 10%);
+//   border-radius: 5px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: rgba(211, 211, 211, 0.4);
+//   border-radius: 5px;
+// }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  color: $global-font-color;
+  text-decoration: none;
+}
+
+@each $header, $size in $global-headings {
+  #{$header} {
+    font-size: $size;
+    font-family: $global-serif-font-family;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: $global-body-width;
+}
+
+@include max-screen() {
+  .container {
+    width: 100%;
+  }
+}
+
+.content-wrapper {
+  padding: 3em 0 1px 0;
+}
+
+// make video fluid:
+// https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+// class video-container is the wrapper used by hexo youtube tag plugin
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-llight {
+  background-color: #f2f2f5;
+}
+
+.bg-white {
+  background-color: #FFF;
+}

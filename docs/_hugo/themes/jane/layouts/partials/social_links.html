@@ -1,0 +1,24 @@
+{{/* This file show footer social icons */}}
+
+{{- range $name, $path := .Site.Params.social }}
+  {{/* social icons */}}
+  {{- if $path }}
+    {{- $realName := slicestr $name 2 }}
+    {{- $filePath := (print "svg/" $realName ".svg") }}
+    <a href="{{ $path | safeURL }}" rel="me noopener" class="iconfont"
+      title="{{ $realName }}" {{ if not (hasPrefix $path "mailto:") }} target="_blank"
+      {{ end }}>
+      {{ partial $filePath }}
+    </a>
+  {{- end }}
+{{- end }}
+
+{{/* RSS icon  */}}
+{{ with .Site.GetPage "home" -}}
+  {{- with .OutputFormats.Get "RSS" -}}
+  <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
+    class="iconfont" title="rss" target="_blank">
+    {{ partial "svg/rss.svg" }}
+  </a>
+  {{ end -}}
+{{- end -}}

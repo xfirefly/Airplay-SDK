@@ -1,0 +1,70 @@
+// ==============================
+// Author Info
+// ==============================
+
+.author-info {
+  margin: 0 5em 3em 5em;
+  background-color: white;
+  padding: 2em 5em 2em 5em;
+  text-align: center;
+
+  .author-box {
+    .author-image img {
+      margin: 1em auto 1em auto;
+      border-radius: 50%;
+      border: 1px solid #999;
+      float: left;
+    }
+    .author-content {
+      padding-left: 200px;
+      text-align: left;
+
+      .author-title {
+        color: #aaa;
+        margin-bottom: 0.1em;
+        font-size: 14px;
+      }
+      .author-name {
+        font-weight: bold;
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+      }
+      .author-desc {
+        font-size: 16px;
+      }
+    }
+    .author-bottom {
+      clear: both;
+    }
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+  .author-info {
+    margin: 0 2em 2em 2em;
+  }
+}
+
+@media screen and (min-width: 504px) and (max-width: 899px) {
+  .author-info {
+    margin: 0 1em 2em 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .author-info {
+    margin: 0 0 2em 0;
+    padding: 1em;
+
+    .author-box {
+      .author-image img {
+        float: none;
+      }
+      .author-content {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}

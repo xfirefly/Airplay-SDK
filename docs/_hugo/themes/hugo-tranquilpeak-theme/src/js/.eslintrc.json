@@ -1,0 +1,10 @@
+{
+    "globals": {
+        "jQuery": false,
+        "moment": false,
+        "algoliaIndex": false
+    },
+    "env": {
+        "browser": true
+    }
+}

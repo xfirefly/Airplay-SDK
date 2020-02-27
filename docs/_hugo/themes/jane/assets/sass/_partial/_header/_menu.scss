@@ -1,0 +1,80 @@
+// ==============================
+// Menu
+// =============================
+
+.site-navbar {
+  .menu {
+    float: right;
+    padding-right: 15px;
+    font-family: $global-serif-font-family;
+
+    .active {
+      font-weight: 700;
+    }
+    
+    .menu-item {
+      display: inline-block;
+      margin-left: 1em;
+      margin-right: 1em;
+      position: relative;
+
+      & + .menu-item {
+        margin-left: $menu-item-margin-left;;
+      }
+
+      .submenu {
+        visibility: hidden;
+        position: absolute;
+        top: 120%;
+        // left: 50%;
+        transition: 0.2s 1s;
+        list-style: none;
+        padding: 0;
+        background: #fff;
+        white-space:nowrap;
+        border: 1px solid #ddd;
+        border-bottom: none;
+        transition: 0.2s 0.2s; /* delay of seconds on hover off */
+        z-index: 99;
+
+        li {
+          border-bottom: 1px solid #ddd;
+
+          a {
+            padding: 12px;
+          }
+        }
+      }
+
+      &:hover .submenu {
+        visibility: visible;
+        transition-delay: 0s; /* react immediately on hover */
+      }
+
+      // @include underline-from-center;
+    }
+
+    .menu-item-link {
+      font-size: $menu-link-font-size;
+    }
+  }
+}
+
+.menu-parent::after {
+  content: " ▼";
+  font-size: 11px;
+}
+
+.menu a:hover {
+  color: $theme-color;
+}
+
+@include max-screen() {
+  .site-navbar {
+    display: none;
+  }
+}
+
+.menu-item-lang .icon-globe::before {
+  font-size: 0.9em;
+}
