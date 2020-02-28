@@ -12,8 +12,8 @@
 # For developpers, if you modify this theme, put your images in `source/images` folder and
 # use grunt task `build` to synchronize assets
 
-baseURL = "https://halo-x.gitee.io/airplay-sdk/"
-#baseURL = "http://deeprd.com/doc/"
+#baseURL = "https://halo-x.gitee.io/airplay-sdk/"
+baseURL = "http://deeprd.com/docs/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "蓝莓投屏 使用教程"

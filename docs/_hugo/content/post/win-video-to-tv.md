@@ -1,12 +1,12 @@
 ---
-title: "windows10 怎么把视频投屏到电视"
+title: "windows10 把视频投屏到电视 - 使用蓝莓投屏App"
 thumbnailImagePosition: top
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
 # coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
 metaAlignment: center
 coverMeta: out
 date: 2020-02-21T22:50:04+08:00
-weight: 1
+weight: 10
 categories:
 - readme
 tags:

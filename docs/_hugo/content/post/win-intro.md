@@ -2,7 +2,7 @@
 title: "蓝莓投屏Windows版使用必读"
 thumbnailImagePosition: top
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city-750.jpg
-# coverImage: //d1u9biwaxjngwg.cloudfront.net/cover-image-showcase/city.jpg
+#coverImage: https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 metaAlignment: center
 coverMeta: out
 date: 2020-02-21T22:50:04+08:00
@@ -16,12 +16,13 @@ keywords:
 ---
 
 <!--more-->
- # Airplay Receiver for windows
+
 下载zip解压即可体验, iPad/iPhone/Mac 使用airplay 镜像到windows, 可以把pc 作为苹果设备的扩展显示器
 
 [直接下载](http://bluberry-10050152.file.myqcloud.com/win-airplay.zip) | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)  | [官网下载](http://deeprd.com/) 
 
 ## 使用必读
+- 务必更新到最新版: `Blueberry V`
 - Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
 
