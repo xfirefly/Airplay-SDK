@@ -22,7 +22,7 @@ keywords:
 [直接下载](http://bluberry-10050152.file.myqcloud.com/win-airplay.zip) | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)  | [官网下载](http://deeprd.com/) 
 
 ## 使用必读
-- 务必更新到最新版: `Blueberry V`
+- 务必更新到最新版: `Blueberry VI`  
 - Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
 
