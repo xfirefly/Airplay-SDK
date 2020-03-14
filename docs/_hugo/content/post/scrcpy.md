@@ -48,4 +48,4 @@ keywords:
 ![](http://deeprd.com/docs/img/scrcpy.png)  
 
  ### 苹果手机投屏
- scrcpy 只支持安卓手机, 如果需要苹果手机投屏, [扫码安装 蓝莓投屏App](http://d.deeprd.com/nlpv) 即可, 投屏教程请访问[软件官网](http://deeprd.com/) 
+ scrcpy 只支持安卓手机, 如果需要苹果手机投屏, [扫码安装 蓝莓投屏App](https://www.pgyer.com/SSKV) 即可, 投屏教程请访问[软件官网](http://deeprd.com/) 
