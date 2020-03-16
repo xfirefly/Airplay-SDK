@@ -22,7 +22,7 @@ keywords:
 [直接下载](http://bluberry-10050152.file.myqcloud.com/win-airplay.zip) | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)  | [官网下载](http://deeprd.com/) 
 
 ## 使用必读
-- 务必更新到最新版: `Blueberry V`
+- 务必更新到最新版: `Blueberry VI`  
 - Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
 
@@ -51,20 +51,20 @@ keywords:
 
 ## 问题反馈
 - 微信: maxfirefly
-<img src="/img/qrcode.png?raw=true" width="100" height="100">
+<img src="http://deeprd.com/docs/img/qrcode.png?raw=true" width="100" height="100">
 
 ## 投屏教程
-![ ](/img/cast.jpg?raw=true "Title")
+![ ](http://deeprd.com/docs/img/cast.jpg?raw=true "Title")
 
 ## 图片展示
 - iPhone
-![](/img/win3.png?raw=true "Title") 
-![](/img/win2.png?raw=true "Title") 
+![](http://deeprd.com/docs/img/win3.png?raw=true "Title") 
+![](http://deeprd.com/docs/img/win2.png?raw=true "Title") 
 
 - iPad
-![](/img/win1.png?raw=true "Title") 
-![](/img/win5.png?raw=true "Title") 
+![](http://deeprd.com/docs/img/win1.png?raw=true "Title") 
+![](http://deeprd.com/docs/img/win5.png?raw=true "Title") 
 
 - Mac
-![](/img/win4.png?raw=true "Title") 
-![](/img/win2.jpg?raw=true "Title") 
+![](http://deeprd.com/docs/img/win4.png?raw=true "Title") 
+![](http://deeprd.com/docs/img/win2.jpg?raw=true "Title") 

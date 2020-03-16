@@ -17,7 +17,7 @@ keywords:
 
 <!--more-->
  
-[扫码安装App](http://d.deeprd.com/nlpv) 即可体验蓝莓投屏强大的功能, 投屏教程请访问[软件官网](http://deeprd.com/) 
+[扫码安装App](https://www.pgyer.com/SSKV) 即可体验蓝莓投屏强大的功能, 投屏教程请访问[软件官网](http://deeprd.com/) 
 
 ## 苹果Airplay镜像投屏
 

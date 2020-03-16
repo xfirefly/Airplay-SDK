@@ -17,7 +17,7 @@ keywords:
 
 <!--more-->
  
-[扫码安装App](http://d.deeprd.com/nlpv) 即可体验蓝莓投屏强大的功能, 投屏教程请访问[软件官网](http://deeprd.com/) 
+[扫码安装App](https://www.pgyer.com/SSKV) 即可体验蓝莓投屏强大的功能, 投屏教程请访问[软件官网](http://deeprd.com/) 
 
 AirPlay是苹果iOS设备上的无线投放功能，用途主要是将我们iPhone、iPad上的内容投放到电视等大屏设备。
 它主要提供以下几种功能：

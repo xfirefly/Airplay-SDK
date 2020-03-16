@@ -45,5 +45,7 @@ keywords:
 使用USB进行连接,此方式推荐使用，相对更加流畅。
 手机通过USB连接到PC上，首次连接会弹出是否信任该电脑，点击始终信任即可。
  
+![](http://deeprd.com/docs/img/scrcpy.png)  
+
  ### 苹果手机投屏
- scrcpy 只支持安卓手机, 如果需要苹果手机投屏, [扫码安装 蓝莓投屏App](http://d.deeprd.com/nlpv) 即可, 投屏教程请访问[软件官网](http://deeprd.com/) 
+ scrcpy 只支持安卓手机, 如果需要苹果手机投屏, [扫码安装 蓝莓投屏App](https://www.pgyer.com/SSKV) 即可, 投屏教程请访问[软件官网](http://deeprd.com/) 
