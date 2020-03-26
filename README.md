@@ -16,7 +16,7 @@
 -	对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感,  iOS 和Android延时120ms左右, 电脑投屏 150ms左右
 -	支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上
 - [Windows 镜像发送端](http://fenti.me/yi)
-- [Android 镜像发送端](http://d.deeprd.com/pfad)
+- [Android 镜像发送端](https://www.pgyer.com/QfhB)
 
 
 ## 联系
