@@ -13,7 +13,9 @@ This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receive
 - The source code is available on several different platforms, and can be easily ported to new platforms.
 
 ## Android App
-- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase android app in reposiory.
+- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase android app.
+- [Latest version of receiver](https://www.pgyer.com/SSKV)
+- [Latest version of sender](https://www.pgyer.com/QfhB)
 
 ## Windows App
 - [Airplay Receiver For Windows](windows-receiver)
@@ -21,6 +23,7 @@ This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receive
 ## Contact us
 - Contact us to buy or ask questions
 - Telegram: https://t.me/maxguguji
+- Wechat: maxfirefly
 
 ## Use Cases
 - Meeting room Collaboration: The SDK allows the presenter to slide the presentation while walking around and being more interactive with the audience, instead of being near to the laptop connected to the big screen to slide through. The mobile display can also be broadcasted on video conference call or webinar through this technology.

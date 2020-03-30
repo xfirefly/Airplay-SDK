@@ -1,7 +1,7 @@
 [[ENGLISH README]](README_EN.md)
 
 ## Airplay Receiver For Android & Windows
-[扫码安装App](http://d.deeprd.com/nlpv) 或者下载仓库里的App即可体验
+[扫码安装App](https://www.pgyer.com/SSKV) 或者下载仓库里的App即可体验
 
 - [Windows Airplay 接收端](windows-receiver)
 - [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) | [Github]( https://github.com/xfirefly/Airplay-SDK ) | [官网](http://deeprd.com/) 
