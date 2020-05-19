@@ -20,6 +20,7 @@
 
 ## 联系
 - 微信: maxfirefly
+- Telegram: https://t.me/maxguguji
 
 <img src="image/qrcode.png?raw=true" width="200" height="200">
 
