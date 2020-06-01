@@ -13,9 +13,7 @@ This SDK/SOURCE supports both Airplay Mirroring and AirPlay Casting to a receive
 - The source code is available on several different platforms, and can be easily ported to new platforms.
 
 ## Android App
-- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase android app.
-- [Latest version of receiver](https://www.pgyer.com/SSKV)
-- [Latest version of sender](https://www.pgyer.com/QfhB)
+- If you’re dying to see exactly what is possible with this SDK/SOURCE, you should check out showcase android app in repository.
 
 ## Windows App
 - [Airplay Receiver For Windows](windows-receiver)
