@@ -29,6 +29,7 @@
 - [iPad/iPhone/Mac 使用airplay 镜像到windows电脑](https://www.bilibili.com/video/av90577703)
 
 ## 问题反馈
+- Telegram: https://t.me/maxguguji
 - 微信: maxfirefly
 <img src="../image/qrcode.png?raw=true" width="100" height="100">
 
