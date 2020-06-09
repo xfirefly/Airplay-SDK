@@ -18,6 +18,7 @@
 
 
 ## 联系
+- Email: zsxzy@foxmail.com
 - 微信: maxfirefly
 - Telegram: https://t.me/maxguguji
 
