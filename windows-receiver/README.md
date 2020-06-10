@@ -33,10 +33,7 @@
 - Telegram: https://t.me/maxguguji
 - 微信: maxfirefly
 <img src="../image/qrcode.png?raw=true" width="100" height="100">
-
-## 投屏教程
-![ ](../image/cast.jpg?raw=true "Title")
-
+ 
 ## 图片展示
 - iPhone
 ![](../image/win3.png?raw=true "Title") 
