@@ -32,12 +32,12 @@ keywords:
 - 播放视频不要用镜像, 请用Airplay视频推送, 安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C/D/E盘都行, 程序会调用其播放视频.   
 2. 连接黑屏 ?  
 - 确认是不是防火墙禁止了exe联网
-3. 杀毒软件报毒 ?
-- 因程序加壳, 360或者Win杀毒可能会误报, 担心的话请禁止程序访问互联网
+3. Win 7 镜像是没有声音 ?
+- 更新到Win 10, 不再维护Win 7 版本
 4. iPhone找不到设备?
 - 确认安装了Apple Bonjour 服务
-5. 支持安卓镜像到windows吗?
-- 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 安卓建议使用 [scrcpy](https://github.com/Genymobile/scrcpy)
+5. 是否支持安卓镜像到windows, windows互相镜像 ?
+- 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 其他功能建议使用 [快投屏](http://kuaitouping.com)
  
 
 ## 更新历史
