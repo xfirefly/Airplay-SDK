@@ -6,7 +6,7 @@
 - [Windows Airplay 接收端](windows-receiver)
 - [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) | [Github]( https://github.com/xfirefly/Airplay-SDK ) | [官网](http://deeprd.com/) 
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
--	支持Airplay/DLNA 和自有编码协议.
+-	支持Airplay/安卓镜像/DLNA , 支持多个Airplay同时镜像
 -	iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
 -	Windows系统安装投屏客户端, 可以用投屏码 一键投屏到对应接收端. 支持同时镜像电脑屏幕到多个接收端,  接收端也可以同时显示多路屏幕, 即支持一投多和多投一, 适合会议办公, PPT演示
 -	Android系统也可以安装投屏客户端App, 实现分屏显示(Android限制, 不能录制系统声音, 所以声音还是从手机输出)
