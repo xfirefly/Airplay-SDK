@@ -4,7 +4,7 @@
 [直接下载](http://bluberry-10050152.file.myqcloud.com/win-airplay.zip) | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)  | [官网下载](http://deeprd.com/) 
 
 ## 使用必读
-- 务必更新到最新版: `Blueberry V`
+- 务必更新到最新版: `Blueberry XI`
 - Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
 
@@ -20,6 +20,7 @@
 - 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 安卓建议使用 [scrcpy](https://github.com/Genymobile/scrcpy) 
 
 ## 更新历史
+- XI 投屏更快更清晰
 - V 重构, 支持4K屏, 增加全屏/窗口显示, 窗口大小自由调整等功能
 - IV 增加视频投屏功能, 手机可通过Airplay投屏播放视频到电脑
 - III 大幅降低镜像延迟
