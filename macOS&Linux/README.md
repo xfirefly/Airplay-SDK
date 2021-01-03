@@ -1,4 +1,4 @@
-# Airplay Receiver For macOS 
+# Airplay Receiver For macOS / Ubuntu
 
 For running on macOS, follow these steps:
 
@@ -22,4 +22,7 @@ airdemo:
 ```   
   
 ##
-![Alt text](macos-airplay-receiver.png?raw=true "Title")
+![](macos-airplay-receiver.png?raw=true "Title")
+
+##
+![](linux-airplay-receiver.png?raw=true "Title")
