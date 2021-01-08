@@ -12,8 +12,9 @@
 ## Q & A
 1. 视频推送投屏怎么用?
 - 播放视频不要用镜像, 请用Airplay视频推送, 安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C/D/E盘都行, 程序会调用其播放视频.   
-2. iPhone/iPad连接不上电脑 ?  
+2. iPhone/iPad 找不到电脑或者连接不上 ?  
 - 进入Windows防火墙/允许应用通过防火墙, 允许 blueberry-Airplay.exe 
+- 关闭路由器"AP隔离", 参考 [小米路由器"AP隔离"](https://zhuanlan.zhihu.com/p/59276468)
 3. iPhone找不到设备?
 - 确认安装了Apple Bonjour 服务
 4. 支持安卓镜像到windows吗?
