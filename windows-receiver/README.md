@@ -27,6 +27,9 @@
 - III 大幅降低镜像延迟
 - II 增加按 f 切换全屏/窗口显示
 
+## 投屏教程
+![](image/cast.jpg?raw=true "Title")
+
 ## 视频展示
 - [iPad/iPhone/Mac 使用airplay 镜像到windows电脑](https://www.bilibili.com/video/av90577703)
 
@@ -37,6 +40,9 @@
 <img src="../image/qrcode.png?raw=true" width="100" height="100">
  
 ## 图片展示
+- 软件界面
+![](../image/win.png?raw=true "Title") 
+
 - iPhone
 ![](../image/win3.png?raw=true "Title") 
 ![](../image/win2.png?raw=true "Title") 

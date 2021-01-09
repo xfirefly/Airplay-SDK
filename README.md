@@ -24,9 +24,6 @@
 
 <img src="image/qrcode.png?raw=true" width="200" height="200">
 
-## 投屏教程
-![Alt text](image/cast.jpg?raw=true "Title")
-
 ## 功能展示
 - MacOS 镜像
 ![Alt text](image/mac.jpg?raw=true "Title")
@@ -37,6 +34,8 @@
 - 对竖屏显示做了深度优化, 支持Airplay / Miracast / 手机端App 竖屏显示, 延时低, 不损失原始画质
 ![Alt text](image/v.png?raw=true "Title")
 
+## 投屏教程
+![Alt text](image/cast.jpg?raw=true "Title")
  
 
 ## 其他问题
