@@ -15,6 +15,7 @@
 2. iPhone/iPad 找不到电脑或者连接不上 ?  
 - 进入Windows防火墙/允许应用通过防火墙, 允许 blueberry-Airplay.exe 
 - 关闭路由器"AP隔离", 参考 [小米路由器"AP隔离"](https://zhuanlan.zhihu.com/p/59276468)
+- **重置系统防火墙最有效**
 3. iPhone找不到设备?
 - 确认安装了Apple Bonjour 服务
 4. 支持安卓镜像到windows吗?
