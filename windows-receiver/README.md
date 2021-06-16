@@ -41,6 +41,9 @@
 <img src="../image/qrcode.png?raw=true" width="100" height="100">
  
 ## 图片展示
+- YouTube 镜像播放
+![](../image/youtube2.png?raw=true "youtube")
+
 - 软件界面
 ![](../image/win.png?raw=true "Title") 
 
