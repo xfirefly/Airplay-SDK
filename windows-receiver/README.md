@@ -7,7 +7,7 @@
 - 务必更新到最新版: `Blueberry XI`
 - Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
-
+- [视频教程](https://www.bilibili.com/video/BV19o4y1y7ZK/) 
 
 ## Q & A
 1. 视频推送投屏怎么用?
