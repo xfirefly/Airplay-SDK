@@ -1,7 +1,8 @@
 [[ENGLISH README]](README_EN.md)
 
 ## Airplay Receiver For Android & Windows
-- [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [Windows Airplay 接收端](https://wwr.lanzoui.com/lanmeipc) | [官网下载](http://deeprd.com/) 
+- [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [Windows Airplay 接收端](https://wwm.lanzoub.com/lanmeipc
+) | [官网下载](http://deeprd.com/) 
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 - 支持Airplay/安卓镜像/DLNA , 支持[多个Airplay同时镜像](multi-device-airplay)
 - iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
