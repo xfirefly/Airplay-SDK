@@ -23,10 +23,8 @@ keywords:
 [官网下载](https://wwr.lanzoui.com/lanmeipc)  | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)   
 
 ## 使用必读
-- 务必更新到最新版: `Blueberry XI`
-- Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
-- 如系统提示已经安装更高版本的 Bonjour, 需要先卸载再安装 蓝莓投屏需要的版本
-- 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
+- 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/17/release/vc_redist.x86.exe
+- 防火墙需要允许 airplay 
 - [视频教程](https://www.bilibili.com/video/BV19o4y1y7ZK/) 
 
 
@@ -38,10 +36,8 @@ keywords:
 - 关闭路由器"AP隔离", 参考 [小米路由器"AP隔离"](https://zhuanlan.zhihu.com/p/59276468)
 - **重置系统防火墙最有效**
 3. Win 7 镜像时没有声音 ?
-- 更新到Win 10, 不再维护Win 7 版本
-4. iPhone找不到设备?
-- 确认安装了Apple Bonjour 服务
-5. 是否支持安卓镜像到windows, windows互相镜像 ?
+- 更新到Win 10/11, 不再维护Win 7 版本
+4. 是否支持安卓镜像到windows, windows互相镜像 ?
 - 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 其他功能建议使用 [快投屏](http://kuaitouping.com)
  
 

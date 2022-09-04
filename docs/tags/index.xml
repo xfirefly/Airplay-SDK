@@ -5,10 +5,6 @@
     <link>http://deeprd.com/docs/tags/</link>
     <description>Recent content in Tags on 蓝莓投屏 使用教程</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="http://deeprd.com/docs/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="http://deeprd.com/docs/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
