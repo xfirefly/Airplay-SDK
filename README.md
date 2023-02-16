@@ -1,11 +1,12 @@
 [[ENGLISH README]](README_EN.md)
 
 ## Airplay Receiver For Android & Windows
-- [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [Windows Airplay 接收端](https://wwm.lanzoub.com/lanmeipc
-) | [官网下载](http://deeprd.com/) 
+- [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [官网下载](http://deeprd.com/) 
+- [Windows 接收端无线版](https://wwm.lanzoub.com/lanmeipc) | [Windows 接收端USB有线版](https://airplay.lanzoub.com/usbairplay)
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 - **支持Airplay/安卓镜像/DLNA , 支持[多个Airplay同时镜像](multi-device-airplay)**
 - **支持iPhone/iPad 使用USB数据线有线投屏,息屏不断开,帧率60fps, 适合大屏玩游戏/教育直播/游戏直播/车载投屏场景**
+- 支持 Android USB有线投屏, 音画同时镜像, 清晰不卡顿 
 - iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
 - Android 安装投屏客户端App, 实现镜像分屏显示
 - 投屏反控, 即Android 接收端反向控制发送端

@@ -1,14 +1,13 @@
 # Free Airplay Receiver for windows
 下载zip解压即可体验, iPad/iPhone/Mac 使用airplay 镜像到windows, 可以把pc 作为苹果设备的扩展显示器
 
-[直接下载](https://wwr.lanzoui.com/lanmeipc) | [Gitee下载](https://gitee.com/halo-x/Airplay-SDK/tree/master/windows-receiver)  | [官网下载](http://deeprd.com/) 
+[无线版](https://wwr.lanzoui.com/lanmeipc) | [USB有线版](https://airplay.lanzoub.com/usbairplay)  | [官网下载](http://deeprd.com/) 
 
 ## 使用必读
-- 务必更新到最新版: `Blueberry XI`
-- Airplay 需要调用Apple Bonjour 广播服务, 先安装zip包内的 Bonjour64.msi 或 Bonjour.msi 
-- 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/16/release/vc_redist.x86.exe
+- USB有线版支持使用USB数据线有线投屏iPad/iPhone 到 Windows
+- 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/17/release/vc_redist.x86.exe
 - [视频教程](https://www.bilibili.com/video/BV19o4y1y7ZK/) 
-
+ 
 ## Q & A
 1. 视频推送投屏怎么用?
 - 播放视频不要用镜像, 请用Airplay视频推送, 安装 [PotPlayer](https://daumpotplayer.com/download/) 或者 [VLC](https://www.videolan.org/vlc/) , 安装到C/D/E盘都行, 程序会调用其播放视频.   
@@ -16,9 +15,7 @@
 - 进入Windows防火墙/允许应用通过防火墙, 允许 blueberry-Airplay.exe 
 - 关闭路由器"AP隔离", 参考 [小米路由器"AP隔离"](https://zhuanlan.zhihu.com/p/59276468)
 - **重置系统防火墙最有效**
-3. iPhone找不到设备?
-- 确认安装了Apple Bonjour 服务
-4. 支持安卓镜像到windows吗?
+3. 支持安卓镜像到windows吗?
 - 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 安卓建议使用 [scrcpy](https://github.com/Genymobile/scrcpy) 
 
 ## 更新历史
