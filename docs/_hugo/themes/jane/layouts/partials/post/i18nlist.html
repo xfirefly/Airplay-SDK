@@ -1,7 +1,0 @@
-{{ if .IsTranslated }}
-<div class="post-meta">
-  {{ range .Translations }}
-  <div><a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a></div>
-  {{ end }}
-</div>
-{{ end }}

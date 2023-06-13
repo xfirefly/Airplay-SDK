@@ -1,12 +1,13 @@
 # Free Airplay Receiver for windows
 下载zip解压即可体验, iPad/iPhone/Mac 使用airplay 镜像到windows, 可以把pc 作为苹果设备的扩展显示器
 
-[无线版](https://wwr.lanzoui.com/lanmeipc) | [USB有线版](https://airplay.lanzoub.com/usbairplay)  | [官网下载](http://deeprd.com/) 
+[官网下载](http://iosair.cn/) 
 
 ## 使用必读
 - USB有线版支持使用USB数据线有线投屏iPad/iPhone 到 Windows
 - 如安装后运行提示找不到 dll, 安装VC运行库 : https://aka.ms/vs/17/release/vc_redist.x86.exe
 - [视频教程](https://www.bilibili.com/video/BV19o4y1y7ZK/) 
+- Windows Defener 提示 Trojan:Script/Wacatac.H!ml 为误报
  
 ## Q & A
 1. 视频推送投屏怎么用?
@@ -16,7 +17,7 @@
 - 关闭路由器"AP隔离", 参考 [小米路由器"AP隔离"](https://zhuanlan.zhihu.com/p/59276468)
 - **重置系统防火墙最有效**
 3. 支持安卓镜像到windows吗?
-- 本程序只支持iPhone/iPad/Mac 镜像到windows系统, 安卓建议使用 [scrcpy](https://github.com/Genymobile/scrcpy) 
+- 支持安卓无线镜像, 有线建议使用 [scrcpy](https://github.com/Genymobile/scrcpy) 
 
 ## 更新历史
 - XI 投屏更快更清晰

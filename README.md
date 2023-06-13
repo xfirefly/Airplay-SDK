@@ -1,7 +1,7 @@
 [[ENGLISH README]](README_EN.md)
 
 ## Airplay Receiver For Android & Windows
-- [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [官网下载](http://deeprd.com/) 
+- [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [官网下载](http://iosair.cn/) 
 - [Windows 接收端](https://wwm.lanzoub.com/lanmeipc)  
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 - **支持Airplay/安卓镜像/DLNA , 支持[多个Airplay同时镜像](multi-device-airplay)**
@@ -13,11 +13,11 @@
 - 支持倍速播放, 支持4K视频播放, 可以推送爱奇异/腾讯视频/优酷 等App 的4K内容播放 (依赖于接收端硬件规格)
 - 对协议层和解码层深度优化, 延迟低, 投屏玩赛车游戏无延迟感(120ms)
 - **支持竖屏显示器显示, 手机屏幕可放大显示在广告机等竖屏显示器上**
-- [Windows系统安装投屏客户端](windows_sender.zip), 可以用投屏码 一键投屏到对应接收端. 支持同时镜像电脑屏幕到多个接收端,  接收端也可以同时显示多路屏幕, 即支持一投多和多投一, 适合会议办公, PPT演示
+- [Windows系统安装投屏客户端](https://airplay.lanzoub.com/sender), 可以用投屏码 一键投屏到对应接收端. 支持同时镜像电脑屏幕到多个接收端,  接收端也可以同时显示多路屏幕, 即支持一投多和多投一, 适合会议办公, PPT演示
 
 
 ## 联系
-- [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) | [Github]( https://github.com/xfirefly/Airplay-SDK ) | [官网](http://deeprd.com/) 
+- [官网](http://iosair.cn/) | [Gitee]( https://gitee.com/halo-x/Airplay-SDK ) | [Github]( https://github.com/xfirefly/Airplay-SDK ) | 
 - Email: zsxzy@foxmail.com
 - 微信: maxfirefly
 - Telegram: https://t.me/maxguguji
