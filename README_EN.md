@@ -2,7 +2,7 @@
 - [Android Receiver](https://www.pgyer.com/SSKV) | [Android Sender](https://www.pgyer.com/QfhB) | [Download from official website](http://deeprd.com/) 
 - [Windows receiver wireless version](https://wwm.lanzoub.com/lanmeipc) | [Windows receiver USB wired version](https://airplay.lanzoub.com/usbairplay)
 - **Sale Airplay protocol source code, can run on rockchip linux , windows, android platform**
-- **Support Airplay/Android mirroring/DLNA , support [multiple Airplay simultaneous mirroring](multi-device-airplay)**
+- **Support Airplay/Android mirroring/DLNA , support multiple Airplay simultaneous mirroring**
 - **Support iPhone/iPad wired casting using USB cable, rest screen constantly open, frame rate 60fps, suitable for large screen games / live education / live games / car casting scenarios**
 - Support Android USB wired screen casting, audio and video mirroring at the same time, clear and no lag 
 - iOS and MacOS, using Airplay protocol, no need to install software, direct mirroring screen casting

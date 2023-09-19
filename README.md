@@ -4,7 +4,7 @@
 - [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [官网下载](http://iosair.cn/) 
 - [Windows 接收端](https://wwm.lanzoub.com/lanmeipc)  
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
-- **支持Airplay/安卓镜像/DLNA , 支持[多个Airplay同时镜像](multi-device-airplay)**
+- **支持Airplay/安卓镜像/DLNA , 支持多个Airplay同时镜像 **
 - **支持iPhone/iPad 使用USB数据线有线投屏,息屏不断开,帧率60fps, 适合大屏玩游戏/教育直播/游戏直播/车载投屏场景**
 - 支持 Android USB有线投屏, 音画同时镜像, 低延时不卡顿 
 - iOS和MacOS里, 使用Airplay协议, 无需安装软件, 直接镜像投屏
