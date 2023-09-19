@@ -1,6 +1,6 @@
 ## Airplay Receiver For Android & Windows
 - [Android Receiver](https://www.pgyer.com/SSKV) | [Android Sender](https://www.pgyer.com/QfhB) | [Download from official website](http://deeprd.com/) 
-- [Windows receiver wireless version](https://wwm.lanzoub.com/lanmeipc) | [Windows receiver USB wired version](https://airplay.lanzoub.com/usbairplay)
+- [Windows receiver](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-airplay.msi)  
 - **Sale Airplay protocol source code, can run on rockchip linux , windows, android platform**
 - Support Airplay/Android mirroring/DLNA , support multiple Airplay simultaneous mirroring
 - Support iPhone/iPad wired casting using USB cable, rest screen constantly open, frame rate 60fps, suitable for large screen games / live education / live games / car casting scenarios
@@ -11,7 +11,7 @@
 - Support multiplier playback, support 4K video playback, can push 4K content from Aiki/ Tencent video/ Youku and other apps (depends on the hardware specification of the receiver)
 - Deep optimization of protocol layer and decoding layer, low latency, no latency for racing games (120ms)
 - Support vertical display, cell phone screen can be enlarged to display on vertical display such as advertising machine
-- Windows system install screen casting client](https://wwm.lanzoub.com/ifrHV03f86pi), you can use the screen casting code to cast screen to the corresponding receiver with one key. Support simultaneous mirroring of the computer screen to multiple receivers, the receiver can also display multiple screens at the same time, that is, support for a cast multiple and multi-cast one, suitable for meetings and offices, PPT presentations
+- Windows system install [screen casting client](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-screen-sender.msi), you can use the screen casting code to cast screen to the corresponding receiver with one key. Support simultaneous mirroring of the computer screen to multiple receivers, the receiver can also display multiple screens at the same time, that is, support for a cast multiple and multi-cast one, suitable for meetings and offices, PPT presentations
  
 ## Specifications
 - Screen Mirroring from iOS and Mac OSX devices.
