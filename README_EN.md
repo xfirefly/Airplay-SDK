@@ -1,6 +1,6 @@
 ## Airplay Receiver For Android & Windows
 - [Android Receiver](https://www.pgyer.com/SSKV) | [Android Sender](https://www.pgyer.com/QfhB) | [Download from official website](http://deeprd.com/) 
-- [Windows receiver](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-airplay.msi)  
+- [Windows receiver](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-airplay.exe)  
 - **Sale Airplay protocol source code, can run on rockchip linux , windows, android platform**
 - Support Airplay/Android mirroring/DLNA , support multiple Airplay simultaneous mirroring
 - Support iPhone/iPad wired casting using USB cable, rest screen constantly open, frame rate 60fps, suitable for large screen games / live education / live games / car casting scenarios

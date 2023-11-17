@@ -2,7 +2,7 @@
 
 ## Airplay Receiver For Android & Windows
 - [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [官网下载](http://iosair.cn/) 
-- [Windows 接收端](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-airplay.msi)  
+- [Windows 接收端](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-airplay.exe)  
 - **出售Airplay协议源代码, 可运行在 rockchip linux , windows, android 等平台**
 - 支持Airplay/安卓镜像/DLNA , 支持多个Airplay同时镜像
 - 支持iPhone/iPad 使用USB数据线有线投屏,息屏不断开,帧率稳定 60fps 
