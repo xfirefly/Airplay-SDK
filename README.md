@@ -35,6 +35,12 @@
 <img src="image/qrcode.png?raw=true" width="200" height="200">
 
 ## 功能展示
+- 家庭版, 无线有线手机电脑全功能投屏
+![Alt text](image/home_app.jpg?raw=true "Title")
+
+- 酒店版隐私投屏,扫码投屏
+![Alt text](image/hotel_app.jpg?raw=true "Title")
+
 - PiP 画中画显示模式
 ![Alt text](image/pip.png?raw=true "Title")
 
