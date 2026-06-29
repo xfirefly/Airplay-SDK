@@ -1,6 +1,6 @@
 [[ENGLISH README]](README_EN.md)
 
-## AirPlay Receiver For Android & Windows
+## 蓝莓投屏 SDK
 - [安卓接收端](https://www.pgyer.com/SSKV) | [安卓发送端](https://www.pgyer.com/QfhB) | [官网下载](http://iosair.cn/) 
 - [Windows 接收端](https://github.com/xfirefly/Airplay-SDK/raw/master/windows-receiver/win-airplay.exe)  
 - [Miracast 接收端](https://github.com/xfirefly/Airplay-SDK/raw/master/miracast-tv.apk)  兼容多个平台的通用版 Wi-Fi Display 接收端 
